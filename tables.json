@@ -1,0 +1,8191 @@
+{
+  "tables": [
+    {
+      "name": "DWD_MAT_CON_ITEM",
+      "desc": "合同明细",
+      "columns": [
+        {
+          "name": "PUR_ODR_ITEM_CODE",
+          "desc": "采购订单行项目号",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "PUR_ODR_CODE",
+          "desc": "采购订单号",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "CON_NAME",
+          "desc": "合同名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_LAW_CODE",
+          "desc": "合同编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ECP_CON_ITEM_CODE",
+          "desc": "ECP合同行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ECP_CON_CODE",
+          "desc": "ECP合同编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_ID",
+          "desc": "合同ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_ITEM_ID",
+          "desc": "合同明细ID",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "HQ_REQ_UNIQUE_CODE",
+        "PUR_ODR_CODE",
+        "PUR_ODR_ITEM_CODE"
+      ]
+    },
+    {
+      "name": "DWD_MAT_PUR_REQ_ITEM_BIDPKG",
+      "desc": "采购申请行分包信息",
+      "columns": [
+        {
+          "name": "STD_MAT_FLAG_CODE",
+          "desc": "标准化物料标识码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DS",
+          "desc": "时间分区",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "PROVINCIAL_ID",
+          "desc": "网省分区",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXTEND_FIELD_VALID_FLAG",
+          "desc": "有效标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXTEND_FIELD_UPDATE_TIME",
+          "desc": "修改时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "EXTEND_FIELD_UPDATE_FLAG",
+          "desc": "修改标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXTEND_FIELD_TIME_STAMP",
+          "desc": "时间戳",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "EXTEND_FIELD_SRC_SYSTEM",
+          "desc": "来源系统",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXTEND_FIELD_6",
+          "desc": "备用字段6",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXTEND_FIELD_5",
+          "desc": "备用字段5",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXTEND_FIELD_4",
+          "desc": "备用字段4",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXTEND_FIELD_3",
+          "desc": "备用字段3",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXTEND_FIELD_2",
+          "desc": "备用字段2",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXTEND_FIELD_1",
+          "desc": "备用字段1",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPLIT_FLAG",
+          "desc": "拆分标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "COST_CENTER",
+          "desc": "成本中心",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ECP_RETURN_DATE",
+          "desc": "ECP退回日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ECP_RETURN_FLAG",
+          "desc": "ECP退回标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_REQ_DEL_FLAG_ECP",
+          "desc": "ECP采购申请删除标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_UP_ERP_TIME",
+          "desc": "计划上传总分部ERP时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_UP_ECP_TIME",
+          "desc": "计划上传ECP时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "IF_OPENBID",
+          "desc": "是否开标",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_BID_PRDT_TIME",
+          "desc": "拟定标时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_OPENBID_TIME",
+          "desc": "拟开标时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_PUB_NTC_TIME",
+          "desc": "拟发布采购公告时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "LAST_DLV_DATE",
+          "desc": "最后一批交货日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "FIRST_DLV_DATE",
+          "desc": "首批交货日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_DLV_DATE",
+          "desc": "计划交货日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "DLV_MODE_DESC",
+          "desc": "交货方式描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DLV_MODE_CODE",
+          "desc": "交货方式编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DLV_ADDR",
+          "desc": "交货地点",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BUDGET_TOT_PRICE",
+          "desc": "评估总价（元）",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "BUDGET_UNIT_PRICE",
+          "desc": "评估单价（元）",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "TECH_SPEC_NAME",
+          "desc": "技术规范书名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TECH_SPEC_CODE",
+          "desc": "技术规范书编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TECH_SPEC_ID",
+          "desc": "技术规范书ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPECIAL_TYPE_DESC",
+          "desc": "专项类型描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPECIAL_TYPE_CODE",
+          "desc": "专项类型编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SINGLE_ENG_NAME",
+          "desc": "工程名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SINGLE_ENG_CODE",
+          "desc": "工程编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRO_NAME",
+          "desc": "项目名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRO_CODE",
+          "desc": "项目编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ENG_VOL_LEV_DESC",
+          "desc": "工程电压等级描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ENG_VOL_LEV_CODE",
+          "desc": "工程电压等级编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRO_VOL_LEV_DESC",
+          "desc": "项目电压等级描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRO_VOL_LEV_CODE",
+          "desc": "项目电压等级编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_VOL_LEV",
+          "desc": "物资电压等级",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "STD_MAT_FLAG_DESC",
+          "desc": "标准化物料标识描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_REQ_ITEM_BIDPKG_ID",
+          "desc": "采购申请行包信息ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "HQ_REQ_CODE",
+          "desc": "总部采购申请号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "HQ_REQ_ITEM_CODE",
+          "desc": "总部采购申请行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "HQ_REQ_UNIQUE_CODE",
+          "desc": "总部采购申请唯一标识码",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "PROV_REQ_CODE",
+          "desc": "网省采购申请号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PROV_REQ_ITEM_CODE",
+          "desc": "网省采购申请行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PROV_REQ_UNIQUE_CODE",
+          "desc": "网省采购申请唯一标识码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_REQ_DOC_TYPE_CODE",
+          "desc": "采购申请凭证类型编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_REQ_DOC_TYPE_DESC",
+          "desc": "采购申请凭证类型描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ECP_PUR_REQ_ITEM_ID",
+          "desc": "ECP采购申请明细ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BIDPKG_ID",
+          "desc": "分包ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BIDPKG_CODE",
+          "desc": "分包编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BIDPKG_NAME",
+          "desc": "分包名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUBBID_ID",
+          "desc": "分标ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUBBID_CODE",
+          "desc": "分标编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUBBID_NAME",
+          "desc": "分标名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BAT_PLAN_YEAR",
+          "desc": "批次计划年度",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BAT_PLAN_CODE",
+          "desc": "批次计划编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BAT_PLAN_NAME",
+          "desc": "批次计划名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_DCL_END_TIME",
+          "desc": "需求计划提报截止时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "PUR_PRO_ID",
+          "desc": "采购项目ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_PRO_CODE",
+          "desc": "采购项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_PRO_NAME",
+          "desc": "采购项目名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_IMPL_MODE_CODE",
+          "desc": "采购实施模式编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_IMPL_MODE_DESC",
+          "desc": "采购实施模式描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_ORG_FORM_CODE",
+          "desc": "采购组织形式编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_ORG_FORM_DESC",
+          "desc": "采购组织形式描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_OBJ_TYPE_CODE",
+          "desc": "采购对象类型编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_OBJ_TYPE_DESC",
+          "desc": "采购对象类型描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_MODE_CODE",
+          "desc": "采购方式编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_MODE_DESC",
+          "desc": "采购方式描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "IMPL_ORG_CODE",
+          "desc": "实施主体编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "IMPL_ORG_NAME",
+          "desc": "实施主体名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRO_ORG_CODE",
+          "desc": "项目单位编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRO_ORG_NAME",
+          "desc": "项目单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DEM_ORG_CODE",
+          "desc": "需求单位编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DEM_ORG_NAME",
+          "desc": "需求单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAX_CAT_CODE",
+          "desc": "物资大类编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAX_CAT_NAME",
+          "desc": "物资大类名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MED_CAT_CODE",
+          "desc": "物资中类编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MED_CAT_NAME",
+          "desc": "物资中类名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MIN_CAT_CODE",
+          "desc": "物资小类编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MIN_CAT_NAME",
+          "desc": "物资小类名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_CODE",
+          "desc": "物料编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_DESC",
+          "desc": "物料描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NUM",
+          "desc": "数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RESERVES_NUM",
+          "desc": "利库数量",
+          "type": "integer",
+          "nullable": true
+        },
+        {
+          "name": "MEAS_UNIT_TYPE_CODE",
+          "desc": "计量单位编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MEAS_UNIT_TYPE_DESC",
+          "desc": "计量单位描述",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "HQ_REQ_UNIQUE_CODE"
+      ]
+    },
+    {
+      "name": "DWD_MAT_WINBID_ITEM_20MAT",
+      "desc": "ECP2.0物资类中标结果明细",
+      "columns": [
+        {
+          "name": "ENG_VOL_LEV_CODE",
+          "desc": "工程电压等级编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WINBID_RETURN_ERP_TIME",
+          "desc": "ECP中标结果回传ERP时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "IF_LINGXING",
+          "desc": "是否电网零星物资选购",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "IF_FAILBID",
+          "desc": "是否流标",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "IF_REQ",
+          "desc": "是否邀请招标",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BID_AGT_CITY",
+          "desc": "招标代理机构所在市",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BID_AGT_NAME",
+          "desc": "招标代理机构名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BID_ORG_NAME",
+          "desc": "招标人名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WINBID_NTF_PUB_TIME",
+          "desc": "中标通知书下发时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "WINBID_NTF_CRT_TIME",
+          "desc": "中标通知书生成时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "WINBID_NTF_STAT_DESC",
+          "desc": "中标通知书状态描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WINBID_NTF_STAT_CODE",
+          "desc": "中标通知书状态编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WINBID_NTC_PUB_DATE",
+          "desc": "中标公告发布日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "WINBID_PUB_TIME",
+          "desc": "中标候选人公示时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "BID_NTC_PUB_TIME",
+          "desc": "招标公告发布时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "OPENBID_TIME",
+          "desc": "开标时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "BUDGET_TOT_PRICE",
+          "desc": "评估总价（元）",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "BUDGET_UNIT_PRICE",
+          "desc": "评估单价（元）",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "TAX_TOT_PRICE",
+          "desc": "含税总价（元）",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "TAX_UNIT_PRICE",
+          "desc": "含税单价（元）",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "UNTAX_TOT_PRICE",
+          "desc": "未含税总价（元）",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "UNTAX_UNIT_PRICE",
+          "desc": "未含税单价（元）",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "DISC",
+          "desc": "折扣率（%）",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "TAX_RATE_DESC",
+          "desc": "税率描述",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "TAX_RATE_CODE",
+          "desc": "税率编码",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "TECH_SPEC_NAME",
+          "desc": "技术规范书名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TECH_SPEC_CODE",
+          "desc": "技术规范书编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TECH_SPEC_ID",
+          "desc": "技术规范书ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "STD_MAT_FLAG_DESC",
+          "desc": "标准化物料标识描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "STD_MAT_FLAG_CODE",
+          "desc": "标准化物料标识码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MEAS_UNIT_TYPE_DESC",
+          "desc": "计量单位描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MEAS_UNIT_TYPE_CODE",
+          "desc": "计量单位编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NUM",
+          "desc": "数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_DESC",
+          "desc": "物料描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_CODE",
+          "desc": "物料编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MIN_CAT_NAME",
+          "desc": "物资小类名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MIN_CAT_CODE",
+          "desc": "物资小类编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MED_CAT_NAME",
+          "desc": "物资中类名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MED_CAT_CODE",
+          "desc": "物资中类编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAX_CAT_NAME",
+          "desc": "物资大类名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAX_CAT_CODE",
+          "desc": "物资大类编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_VOL_LEV",
+          "desc": "物资电压等级",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ENG_VOL_LEV_DESC",
+          "desc": "工程电压等级描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WINBID_ITEM_20MAT_ID",
+          "desc": "ECP2.0物资类中标结果明细ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BAT_PLAN_YEAR",
+          "desc": "批次计划年度",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BAT_PLAN_CODE",
+          "desc": "批次计划编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BAT_PLAN_NAME",
+          "desc": "批次计划名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BAT_PLAN_PUR_TYPE_CODE",
+          "desc": "批次计划采购类型编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BAT_PLAN_PUR_TYPE_DESC",
+          "desc": "批次计划采购类型描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_DCL_END_TIME",
+          "desc": "需求计划提报截止时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "PUR_YEAR",
+          "desc": "采购年度",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_MODE_CODE",
+          "desc": "采购方式编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_MODE_DESC",
+          "desc": "采购方式描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_PRO_ID",
+          "desc": "采购项目ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_PRO_CODE",
+          "desc": "采购项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_PRO_NAME",
+          "desc": "采购项目名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "IMPL_ORG_CODE",
+          "desc": "实施主体编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "IMPL_ORG_NAME",
+          "desc": "实施主体名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_IMPL_MODE_CODE",
+          "desc": "采购实施模式编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_IMPL_MODE_DESC",
+          "desc": "采购实施模式描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_ORG_FORM_CODE",
+          "desc": "采购组织形式编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_ORG_FORM_DESC",
+          "desc": "采购组织形式描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_OBJ_TYPE_CODE",
+          "desc": "采购对象类型编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_OBJ_TYPE_DESC",
+          "desc": "采购对象类型描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DEM_ORG_CODE",
+          "desc": "需求单位编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DEM_ORG_NAME",
+          "desc": "需求单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRO_ORG_CODE",
+          "desc": "项目单位编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRO_ORG_NAME",
+          "desc": "项目单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUBBID_ID",
+          "desc": "分标ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUBBID_CODE",
+          "desc": "分标编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUBBID_NAME",
+          "desc": "分标名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BIDPKG_ID",
+          "desc": "分包ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BIDPKG_CODE",
+          "desc": "分包编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BIDPKG_NAME",
+          "desc": "分包名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRICE_MODE_CODE",
+          "desc": "投标报价方式编码",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "PRICE_MODE_DESC",
+          "desc": "投标报价方式描述",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "HQ_REQ_CODE",
+          "desc": "总部采购申请号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "HQ_REQ_ITEM_CODE",
+          "desc": "总部采购申请行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "HQ_REQ_UNIQUE_CODE",
+          "desc": "总部采购申请唯一标识码",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "PROV_REQ_CODE",
+          "desc": "网省采购申请号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PROV_REQ_ITEM_CODE",
+          "desc": "网省采购申请行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PROV_REQ_UNIQUE_CODE",
+          "desc": "网省采购申请唯一标识码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPP_CODE",
+          "desc": "供应商编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPP_NAME",
+          "desc": "供应商名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRO_CODE",
+          "desc": "项目编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRO_NAME",
+          "desc": "项目名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SINGLE_ENG_CODE",
+          "desc": "工程编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SINGLE_ENG_NAME",
+          "desc": "工程名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WBS_CODE",
+          "desc": "WBS编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WBS_DESC",
+          "desc": "WBS描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRO_VOL_LEV_CODE",
+          "desc": "项目电压等级编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRO_VOL_LEV_DESC",
+          "desc": "项目电压等级描述",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "HQ_REQ_UNIQUE_CODE"
+      ]
+    },
+    {
+      "name": "UN01_03_ERP_CD_EKPO",
+      "desc": "采购凭证项目",
+      "columns": [
+        {
+          "name": "MAHN3",
+          "desc": "第三封催询单的天数",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CONS_ORDER",
+          "desc": "寄售的采购清单",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "POL_ID",
+          "desc": "订单清单项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUT_BACK",
+          "desc": "用于从已分组采购订单凭证返回的标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SOURCE_KEY",
+          "desc": "源系统中的键值",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SOURCE_ID",
+          "desc": "原始参数文件",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "REF_ITEM",
+          "desc": "用于保留数量取消的参考项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "REFSITE",
+          "desc": "采购的参考站点",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MRPIND",
+          "desc": "Max.RetailPriceRelevant",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "IUID_RELEVANT",
+          "desc": "项目唯一标识相关",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXCPE",
+          "desc": "AcceptancePeriod",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BUDGET_PD",
+          "desc": "FM：预算期间",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ADVCODE",
+          "desc": "AdviceCode",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EBELN",
+          "desc": "采购订单编号",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "BEV1_NESTRUCCAT",
+          "desc": "物料关系的结构类别",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BEV1_NEDEPFREE",
+          "desc": "标识：相关项目免费",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BEV1_NEGEN_ITEM",
+          "desc": "标识：项目被生成",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WABWE",
+          "desc": "基于GI的货物接收指示器",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "FIXMG",
+          "desc": "交货日期和数量已确定",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ITCONS",
+          "desc": "转包组件的实时消耗过帐",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BLK_REASON_TXT",
+          "desc": "冻结原因-文本",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BLK_REASON_ID",
+          "desc": "冻结原因-标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SRM_CONTRACT_ITM",
+          "desc": "中心合同项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SRM_CONTRACT_ID",
+          "desc": "中心合同",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXT_RFX_SYSTEM",
+          "desc": "逻辑系统",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXT_RFX_ITEM",
+          "desc": "外部凭证的项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXT_RFX_NUMBER",
+          "desc": "外部凭证的凭证编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "FLS_RSTO",
+          "desc": "含内向和外向交货的商店退货",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DPDAT",
+          "desc": "预付款到期日",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "DPAMT",
+          "desc": "按凭证货币计的预付款金额",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "DPPCT",
+          "desc": "预付款百分比",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "DPTYP",
+          "desc": "预付款标识",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "RETPC",
+          "desc": "以百分比计的保留",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "EHTYP",
+          "desc": "外部层次结构类别",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXSNR",
+          "desc": "外部排序",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXLIN",
+          "desc": "项目编号长度",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPE_EWM_DTC",
+          "desc": "基于容差检查的EWM交货",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ANZSN",
+          "desc": "序列号数目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CQU_SAR",
+          "desc": "来自重定向采购订单的累计收货",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "REASON_CODE",
+          "desc": "收货原因代码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPE_CQ_NOCQ",
+          "desc": "在SA释放中无累积量的传输",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPE_CQ_CTRLTYPE",
+          "desc": "CQ控制类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPE_INSMK_SRC",
+          "desc": "STO中的源存储地点库存类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPE_CHNG_SYS",
+          "desc": "上一更改者的系统类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPE_CRM_FKREL",
+          "desc": "开票相关CRM",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPE_CRM_REF_ITEM",
+          "desc": "TPOP处理中的CRM参考销售订单项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPE_CRM_REF_SO",
+          "desc": "TPOP处理中的CRM参考订单编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPE_CRM_SO_ITEM",
+          "desc": "TPOP处理中的CRM销售订单项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPE_CRM_SO",
+          "desc": "TPOP处理中的CRM销售订单编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPE_ABGRU",
+          "desc": "报价和销售订单的拒绝原因",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "TRMRISK_RELEVANT",
+          "desc": "采购中的风险相关性",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DIFF_INVOICE",
+          "desc": "差额开票",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EMPST",
+          "desc": "收货点",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRIO_REQ",
+          "desc": "RequirementPriority",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRIO_URG",
+          "desc": "RequirementUrgency",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SRV_BAS_COM",
+          "desc": "基于服务的承诺",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WEORA",
+          "desc": "原始接受",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KBLPOS",
+          "desc": "资金储备：凭证项",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KBLNR",
+          "desc": "专项基金凭证编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RESLO",
+          "desc": "库存运输订单发货存储地点",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "STATUS",
+          "desc": "采购凭证项目的状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "FKBER",
+          "desc": "功能范围",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "GRANT_NBR",
+          "desc": "同意",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CCOMP",
+          "desc": "存货转储的过帐逻辑",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "APOMS",
+          "desc": "APO作为计划系统",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "XCONDITIONS",
+          "desc": "无发票时的项目定价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "BERID",
+          "desc": "MRP范围",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LEBRE",
+          "desc": "基于服务的发票校验标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "IPRKZ",
+          "desc": "货架寿命到期日的期间标识",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "TZONRC",
+          "desc": "接收位置的时区",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "AFNAM",
+          "desc": "需求者/请求者姓名",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NOVET",
+          "desc": "SD交货的已冻结项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EMNFR",
+          "desc": "外部制造商代码名称或编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MFRNR",
+          "desc": "制造商编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MFRPN",
+          "desc": "制造商零件编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CHG_FPLNR",
+          "desc": "没有此项目的发票尽管不免费",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CHG_SRV",
+          "desc": "配置已修改",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TECHS",
+          "desc": "参数变式/标准变式",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RDPRF",
+          "desc": "舍入参数文件",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KZFME",
+          "desc": "计量单位使用",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KZTLF",
+          "desc": "项目级别的部分交货(库存转储)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EGLKZ",
+          "desc": "出库交货已完成标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MPROF",
+          "desc": "制造商部件参数文件",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "J_1AIDATEP",
+          "desc": "通货膨胀指数日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "J_1AINDXP",
+          "desc": "通货膨胀指数",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "FABKZ",
+          "desc": "标识:与JIT交货计划相关的物料",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BONBA",
+          "desc": "回扣基数1",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KZBWS",
+          "desc": "特定库存的评估",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NFABD",
+          "desc": "下一个JIT交货计划传输",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NLABD",
+          "desc": "下一个预测交货计划传输",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ABUEB",
+          "desc": "批准创建参数文件",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "J_1BINDUST",
+          "desc": "物料:CFOP类别",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "J_1BOWNPRO",
+          "desc": "自制产品",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "J_1BMATORG",
+          "desc": "物料源",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "J_1BMATUSE",
+          "desc": "物料用途",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "J_1BNBM",
+          "desc": "NBM编码(巴西)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NRFHG",
+          "desc": "针对物料的折扣类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MFRGR",
+          "desc": "物料运输组",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LFRET",
+          "desc": "退货给供应商的交货类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BSGRU",
+          "desc": "订货原因",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "AUREL",
+          "desc": "与分配表相关",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RETPO",
+          "desc": "退货项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "FFZHI",
+          "desc": "最大累计产品向前数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MFZHI",
+          "desc": "最大累计物料提前量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SIKGR",
+          "desc": "子项目的处理代码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KZWI6",
+          "desc": "从条件定价过程小计6",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "KZWI5",
+          "desc": "从条件定价过程小计5",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "KZWI4",
+          "desc": "从条件定价过程小计4",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "KZWI3",
+          "desc": "从条件定价过程小计3",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "KZWI2",
+          "desc": "从条件定价过程小计2",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "KZWI1",
+          "desc": "从条件定价过程小计1",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "UPVOR",
+          "desc": "子项目存在",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "UPTYP",
+          "desc": "子项目类别，采购凭证",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MTART",
+          "desc": "物料类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BNFPO",
+          "desc": "采购申请的项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BANFN",
+          "desc": "采购申请编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "UMSOK",
+          "desc": "库存调拨的特殊库存标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "USEQU",
+          "desc": "配额分配使用",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KZKFG",
+          "desc": "原始配置",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ANFPS",
+          "desc": "RFQ项目号码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ANFNR",
+          "desc": "RFQ编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MHDRZ",
+          "desc": "最短剩余货架寿命",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MLMAA",
+          "desc": "物料帐簿在物料层被激活",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EBONF",
+          "desc": "与后继（期末回扣）结算相关的项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EBON3",
+          "desc": "结算组3（回扣结算,采购）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EBON2",
+          "desc": "结算组2(回扣结算,采购)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SAISJ",
+          "desc": "季度年",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SAISO",
+          "desc": "季节类别",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUNEI",
+          "desc": "点单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ANZPU",
+          "desc": "点数",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ABELP",
+          "desc": "分配表项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ABELN",
+          "desc": "分配表编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "AKTNR",
+          "desc": "促销",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DRUNR",
+          "desc": "顺序编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DRUHR",
+          "desc": "时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "DRDAT",
+          "desc": "上一次传输",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "EILDT",
+          "desc": "基于收货的结算的开始日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "XERSY",
+          "desc": "评估收货结算(ERS)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CUOBJ",
+          "desc": "配置(内部对象号)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ADRN2",
+          "desc": "交货地址编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KANBA",
+          "desc": "看板标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ATTYP",
+          "desc": "物料类别",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SATNR",
+          "desc": "一般可配置物料",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LBLKZ",
+          "desc": "分包合同供应商",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EMLIF",
+          "desc": "被供应的供应商/接受供货者",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LEWED",
+          "desc": "最近可能的收货",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "UEBPO",
+          "desc": "采购凭证中上层项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "STAPO",
+          "desc": "项目是统计的",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "GNETWR",
+          "desc": "当前未使用",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "FPLNR",
+          "desc": "发票计划编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PACKNO",
+          "desc": "软件包编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LTSNR",
+          "desc": "供应商子范围",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KOLIF",
+          "desc": "原始供应商",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "VORAB",
+          "desc": "提前采购：项目库存",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INCO2",
+          "desc": "国际贸易条件(部分2)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INCO1",
+          "desc": "国际贸易条款(部分1)",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "VOLEH",
+          "desc": "体积单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "VOLUM",
+          "desc": "业务量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BRGEW",
+          "desc": "毛重",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MEPRF",
+          "desc": "价格确定（定价）日期控制",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "KO_PPRCTR",
+          "desc": "伙伴利润中心",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KO_PRCTR",
+          "desc": "利润中心",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KO_PARGB",
+          "desc": "业务伙伴的假设业务部门",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KO_GSBER",
+          "desc": "对业务伙伴报告的业务部门",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "FIPOS",
+          "desc": "承诺项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "FISTL",
+          "desc": "基金中心",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "GEBER",
+          "desc": "基金",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "REVLV",
+          "desc": "版次",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BSTAE",
+          "desc": "确认控制代码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EAN11",
+          "desc": "国际文件号(EAN/UPC)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZGTYP",
+          "desc": "证书类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SSQSS",
+          "desc": "采购中质量管理的控制码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INSNC",
+          "desc": "质量检查标识不能被更改",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ARSPS",
+          "desc": "结算的预定的项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ARSNR",
+          "desc": "结算预定号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SOBKZ",
+          "desc": "特殊库存标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ETDRK",
+          "desc": "标识:打印相关的计划行存在",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TXJCD",
+          "desc": "地区税务代码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "GEWEI",
+          "desc": "重量单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NTGEW",
+          "desc": "净重",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PLIFZ",
+          "desc": "按天的计划交货时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "STAFO",
+          "desc": "更新组用于统计更新",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SKTOF",
+          "desc": "项目不允许现金折扣",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EKKOL",
+          "desc": "供应商条件组",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ADRNR",
+          "desc": "采购凭证项目中的人工地址号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KUNNR",
+          "desc": "客户",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "XOBLR",
+          "desc": "项目影响委托",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EFFWR",
+          "desc": "项目的有效值",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BSTYP",
+          "desc": "采购凭证类别",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRDAT",
+          "desc": "价格确定日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ABMNG",
+          "desc": "标准审批订单数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAVNW",
+          "desc": "不可打折的进项税",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZWERT",
+          "desc": "在框架协议中凭证货币的目标值",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EVERS",
+          "desc": "装运须知",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LMEIN",
+          "desc": "基本计量单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NOTKZ",
+          "desc": "排除含有物料类的框架协议",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KZSTU",
+          "desc": "关于物料计划的固定/平衡区域的绑定",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ETFZ2",
+          "desc": "平衡区域(向前为物料采购)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ETFZ1",
+          "desc": "确定的域(生产前)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ABFTZ",
+          "desc": "允许的累计数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ABDAT",
+          "desc": "同意的累积数量对帐日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "KTPNR",
+          "desc": "主要采购协议的项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KONNR",
+          "desc": "重要的采购协议号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LABNR",
+          "desc": "订单回执编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KZABS",
+          "desc": "订单回执需求",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WEBRE",
+          "desc": "标识：基于收货的发票验证",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "REPOS",
+          "desc": "发票收据标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WEUNB",
+          "desc": "收货，非评估",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WEPOS",
+          "desc": "货物收据标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TWRKZ",
+          "desc": "部分发票标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "VRTKZ",
+          "desc": "复式记帐的分配标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KZVBR",
+          "desc": "消耗过帐",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KNTTP",
+          "desc": "科目分配类别",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PSTYP",
+          "desc": "采购凭证中的项目类别",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EREKZ",
+          "desc": "最后发票标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ELIKZ",
+          "desc": "交货已完成标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "AGMEM",
+          "desc": "报价的内部说明",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "ABSKZ",
+          "desc": "拒绝标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BWTTY",
+          "desc": "评估类别",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BWTAR",
+          "desc": "评估类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "UNTTO",
+          "desc": "交货不足限度",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "UEBTK",
+          "desc": "标识：允许未限制的过量交货",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "UEBTO",
+          "desc": "过量交货限度",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHTBH_DZSW",
+          "desc": "电子商务合同编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHXM",
+          "desc": "合同行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZBBH",
+          "desc": "招标标号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BHZB",
+          "desc": "包号、子号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZBQ",
+          "desc": "质保期",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZPOEBELN",
+          "desc": "采购凭证号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZPOEBELP",
+          "desc": "采购凭证的项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZPR_ID",
+          "desc": "请购单号（采购专区）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZQGDHXM",
+          "desc": "请购单行项目（采购专区）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MANDT",
+          "desc": "集团",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EBELP",
+          "desc": "采购凭证的项目编号",
+          "type": "integer",
+          "nullable": false
+        },
+        {
+          "name": "LOEKZ",
+          "desc": "采购凭证中的删除标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "STATU",
+          "desc": "询价状态",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "AEDAT",
+          "desc": "采购凭证项目更改日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "TXZ01",
+          "desc": "短文本",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MATNR",
+          "desc": "物料编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EMATN",
+          "desc": "物料号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BUKRS",
+          "desc": "公司代码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WERKS",
+          "desc": "工厂",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LGORT",
+          "desc": "库存地点",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BEDNR",
+          "desc": "需求跟踪号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MATKL",
+          "desc": "物料组",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INFNR",
+          "desc": "采购信息记录的编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "IDNLF",
+          "desc": "供应商使用的物料编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KTMNG",
+          "desc": "目标数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MENGE",
+          "desc": "采购订单数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MEINS",
+          "desc": "订单单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BPRME",
+          "desc": "订单价格单位(采购)",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "BPUMZ",
+          "desc": "订单价格单位转换为订单单位的分子",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "BPUMN",
+          "desc": "订单价格单位转换为订单单位的分母",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "UMREZ",
+          "desc": "有关订货价格单位转换为基本单位的分子",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "UMREN",
+          "desc": "订单单位到基本单位转换的分母",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NETPR",
+          "desc": "采购凭证中的净价(以凭证货币计)",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "PEINH",
+          "desc": "价格单位",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "NETWR",
+          "desc": "采购订单货币的订单净值",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BRTWR",
+          "desc": "以采购订单货币计的订单总价值",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "AGDAT",
+          "desc": "投标/报价提交的截止日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "WEBAZ",
+          "desc": "以天计的收货处理时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "MWSKZ",
+          "desc": "销售/购买税代码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BONUS",
+          "desc": "结算组1（采购）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INSMK",
+          "desc": "库存类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPINF",
+          "desc": "标识:更新信息记录",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRSDR",
+          "desc": "价格打印输出",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "SCHPR",
+          "desc": "标识：估计价格",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "MAHNZ",
+          "desc": "催询单数",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAHN1",
+          "desc": "第一封催询单天数",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAHN2",
+          "desc": "第二封催询单的天数",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "EBELN",
+        "EBELP"
+      ]
+    },
+    {
+      "name": "FCT_MAT_YSSWZJZXXB_DF",
+      "desc": "物资监造信息表",
+      "columns": [
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "JZFY",
+          "desc": "监造费用（元）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "discount_rate",
+          "desc": "折扣率",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "JZFL",
+          "desc": "监造费率",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "SBZJ",
+          "desc": "设备总价（元）",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "TASK_code",
+          "desc": "任务编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SBCCSJ",
+          "desc": "设备出厂时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZCJZSJ",
+          "desc": "驻场监造时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "dydj",
+          "desc": "电压等级",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "name1",
+          "desc": "工厂描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "werks",
+          "desc": "工厂编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EQU_QTY",
+          "desc": "监造数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MEAS_UNIT_TYPE",
+          "desc": "计量单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_CODE_DES",
+          "desc": "物料描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_CODE",
+          "desc": "物料编码",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "EXT_DES",
+          "desc": "物料组",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ENG_NAME",
+          "desc": "工程名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "XMDY",
+          "desc": "项目定义",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ORG_ID",
+          "desc": "机构名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_SUBJECT_ORG_ID",
+          "desc": "实施主体ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "badat",
+          "desc": "采购年份",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZBPC",
+          "desc": "招标批次",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "HTJFBH",
+          "desc": "合同经法编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "JZHTBH",
+          "desc": "监造合同编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CGHTBH",
+          "desc": "采购合同编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ORG_NAME",
+          "desc": "供应商名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ORG_CODE",
+          "desc": "供应商编码",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "XMDWMC",
+          "desc": "项目单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRJ_ORG_NAME",
+          "desc": "项目单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURORD_CODE",
+          "desc": "采购订单行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURORD",
+          "desc": "采购订单编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "ID主键描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "ID主键",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "MAT_CODE",
+        "ORG_CODE"
+      ]
+    },
+    {
+      "name": "fct_mat_YSSCGDDSP_df",
+      "desc": "采购订单审批记录",
+      "columns": [
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ejsptime",
+          "desc": "采购订单终审审批时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ejspdate",
+          "desc": "采购订单终审审批日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ejspz",
+          "desc": "采购订单终审审批者",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "yjspztime",
+          "desc": "部门领导审批时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "yjspzdate",
+          "desc": "部门领导审批日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "yjspz",
+          "desc": "部门领导审批人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "AEDAT",
+          "desc": "PO创建日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ERNAM",
+          "desc": "创建者",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZBS",
+          "desc": "系统标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "banfn",
+          "desc": "采购订单编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "序号名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "序号",
+          "type": "string",
+          "nullable": true
+        }
+      ]
+    },
+    {
+      "name": "fct_mat_YSSCGDD_df",
+      "desc": "采购订单",
+      "columns": [
+        {
+          "name": "knttp",
+          "desc": "科目分配类别",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "text10",
+          "desc": "费用明细描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zzcobl1",
+          "desc": "费用明细编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TXT50",
+          "desc": "总账科目名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "sakto",
+          "desc": "总账科目编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "pratx",
+          "desc": "项目类别名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "prart",
+          "desc": "项目类别",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "序号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "序号名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ebeln",
+          "desc": "采购订单编号",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "ebelp",
+          "desc": "采购订单行项目号",
+          "type": "integer",
+          "nullable": true
+        },
+        {
+          "name": "werks",
+          "desc": "工厂编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "werksmc",
+          "desc": "工厂描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "bstyp",
+          "desc": "采购凭证类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BATXT",
+          "desc": "采购凭证类型描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "lifnr",
+          "desc": "供应商编号",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "SUPP_NAME",
+          "desc": "供应商名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ekorg",
+          "desc": "采购组织",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ekotx",
+          "desc": "采购组织描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ersda",
+          "desc": "创建日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zsxrq",
+          "desc": "订单生效日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "MATNR",
+          "desc": "物料编码",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "matcodedes",
+          "desc": "物料名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "maxcat_code",
+          "desc": "物料大类编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "maxcat_name",
+          "desc": "物料大类描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "medcat_code",
+          "desc": "物料中类编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "medcat_name",
+          "desc": "物料中类描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "mincat_code",
+          "desc": "物料小类(物料组)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "mincat_name",
+          "desc": "物料小类描述(物料组描述)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "loekz",
+          "desc": "采购凭证删除标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "menge_ord",
+          "desc": "采购订单数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "measunittype",
+          "desc": "计量单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msehl",
+          "desc": "计量单位描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "netpr",
+          "desc": "订单不含税单价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "netwr",
+          "desc": "订单不含税总金额",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "zjsgfid",
+          "desc": "技术规范书ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_CODE",
+          "desc": "合同编号（ECP合同编号）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_LAW_CODE",
+          "desc": "合同编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fkbl",
+          "desc": "支付比例",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "konnr",
+          "desc": "框架协议编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ktpnr",
+          "desc": "框架协议行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "elikz",
+          "desc": "交货已完成标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "banfn",
+          "desc": "采购申请编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "bnfpo",
+          "desc": "采购申请行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "kostl",
+          "desc": "成本中心编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ktext",
+          "desc": "成本中心名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ko_prctr",
+          "desc": "利润中心编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "pspid",
+          "desc": "项目编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "post1",
+          "desc": "项目名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "posid",
+          "desc": "WBS编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WBSYS",
+          "desc": "wbs描述",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "MATNR",
+        "ebeln",
+        "lifnr"
+      ]
+    },
+    {
+      "name": "fct_mat_YSSCGHTDetail_df",
+      "desc": "采购合同明细",
+      "columns": [
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "werksmc",
+          "desc": "工厂描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WERKS",
+          "desc": "工厂代码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURORD_CODE",
+          "desc": "采购订单行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURREQ_ID",
+          "desc": "采购申请id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURREQ_ITEM_CODE",
+          "desc": "采购申请行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURREQ_CODE",
+          "desc": "采购申请号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_MIN_NAME",
+          "desc": "物资小类名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_MED_NAME",
+          "desc": "物资中类名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_MAX_NAME",
+          "desc": "物资大类名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_MIN_ID",
+          "desc": "物资小类ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_MED_ID",
+          "desc": "物资中类ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_MAX_ID",
+          "desc": "物资大类ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_CAT",
+          "desc": "物资分类",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DLV_TIME",
+          "desc": "交货时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "DLV_ADDR",
+          "desc": "交货地点",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_DLV_TIME",
+          "desc": "合同交货期",
+          "type": "timestamp",
+          "nullable": true
+        },
+        {
+          "name": "DLV_MODE",
+          "desc": "合同物料项交货方式",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DEMAND_ORG_CODE",
+          "desc": "需求单位编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DEMAND_ORG_NAME",
+          "desc": "需求单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRJ_CODE",
+          "desc": "单体工程编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRJ_NAME",
+          "desc": "单体工程名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ENG_NAME",
+          "desc": "工程项目名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ENG_CODE",
+          "desc": "工程项目编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRJ_ORG",
+          "desc": "项目单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ENG_PRJ_ID",
+          "desc": "工程id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "QM_FLAG",
+          "desc": "监造标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TAX_TOT_PRICE",
+          "desc": "合同含税总价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "TAX_UNIT_PRICE",
+          "desc": "合同含税单价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "TAX_RATE",
+          "desc": "税率",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "QTY",
+          "desc": "数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "UNTAX_UNIT_PRICE",
+          "desc": "不含税单价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "UNTAX_TOT_PRICE",
+          "desc": "不含税总价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "MEAS_UNIT_TYPE",
+          "desc": "计量单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_DES",
+          "desc": "物料描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_NAME",
+          "desc": "物料名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_CODE_ID",
+          "desc": "物料id",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "TECH_SPEC_ID",
+          "desc": "技术规范书ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TECH_CHG_OBJ",
+          "desc": "变更对象类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CHG_TYPE",
+          "desc": "合同变更类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_MAT_ITEM_ID",
+          "desc": "合同物料项ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_ITEM_CODE",
+          "desc": "合同行编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_ID",
+          "desc": "合同ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "ID主键描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "ID主键",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "MAT_CODE_ID",
+        "con_id"
+      ]
+    },
+    {
+      "name": "fct_mat_YSSCGHT_df",
+      "desc": "采购合同",
+      "columns": [
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "werksmc",
+          "desc": "工厂描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WERKS",
+          "desc": "工厂代码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "END_SIGN_REASON",
+          "desc": "终止签章原因",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "E_SIGN_STATUS",
+          "desc": "合同电子签章状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ENG_CODE",
+          "desc": "工程的编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ENG_NAME",
+          "desc": "工程的名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DELETE_FLAG",
+          "desc": "删除标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "FRZ_FLAG",
+          "desc": "是否冻结",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CANCEL_FLAG",
+          "desc": "合同解除标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_TRANS_STATUS",
+          "desc": "合同流转的状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_TRANS_TIME",
+          "desc": "合同流转日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "VALID_BEGIN_TIME",
+          "desc": "合同有效期开始日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "VALID_END_TIME",
+          "desc": "合同有效期截止日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "CON_END_TIME",
+          "desc": "合同结束时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "CON_BEGIN_TIME",
+          "desc": "合同开始时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "PAY_RATE",
+          "desc": "支付比例",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "WARR",
+          "desc": "质保期",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRJ_CODE",
+          "desc": "项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRJ_NAME",
+          "desc": "项目名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ERP_AGREEMENT_CODE",
+          "desc": "ERP协议库存号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURORD",
+          "desc": "采购订单编号",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "PUB_DATE",
+          "desc": "中标通知生成日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "bid_bat_code",
+          "desc": "招标批次编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SELLER_SIGN_TIME",
+          "desc": "卖方签订日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "BUYER_SIGN_TIME",
+          "desc": "买方签订日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "MAT_NAME",
+          "desc": "合同货物名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TOT_PAY_AMT",
+          "desc": "已付金额（元）",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "tot_pay_rate",
+          "desc": "已付比例",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "TAX_AMT",
+          "desc": "合同金额",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "SELLER_CONTACT_TEL",
+          "desc": "合同乙方（供应商联系人电话）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SELLER_CONTACT",
+          "desc": "合同乙方（供应商联系人）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPP_NAME",
+          "desc": "合同乙方（供应商名称）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPP_CODE",
+          "desc": "合同乙方（供应商编码）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BUYER_NAME",
+          "desc": "合同甲方（买家）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DEMAND_ORG_NAME",
+          "desc": "需求单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_VALID_TIME",
+          "desc": "合同生效时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "CON_STATUS",
+          "desc": "合同状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_TYPE",
+          "desc": "合同类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_NAME",
+          "desc": "合同名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_LAW_CODE",
+          "desc": "合同编号（经法合同编号）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_CODE",
+          "desc": "合同编号（ECP合同编号）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "con_id",
+          "desc": "合同ID",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "NAME",
+          "desc": "ID主键描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "ID主键",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "PURORD",
+        "con_id"
+      ]
+    },
+    {
+      "name": "fct_mat_YSSCGSQSP_df",
+      "desc": "采购申请审批记录",
+      "columns": [
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ejsptime",
+          "desc": "采购执行单位审批时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ejspdate",
+          "desc": "采购执行单位审批日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ejspz",
+          "desc": "采购执行单位审批人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zbtime",
+          "desc": "采购方式维护时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zbdate",
+          "desc": "采购方式维护日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zbzz",
+          "desc": "招标专责",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "yjspztime",
+          "desc": "一级审批时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "yjspzdate",
+          "desc": "一级审批日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "yjspz",
+          "desc": "一级审批人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EKGRP",
+          "desc": "需求部门",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BADAT",
+          "desc": "PR创建日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ERNAM",
+          "desc": "创建者",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZBS",
+          "desc": "系统标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "FRGKZ",
+          "desc": "PR审批状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "bnfpo",
+          "desc": "采购申请行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "banfn",
+          "desc": "采购申请编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "序号名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "序号",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "ebeln"
+      ]
+    },
+    {
+      "name": "fct_mat_YSSFJSFP_DF",
+      "desc": "非寄售发票信息",
+      "columns": [
+        {
+          "name": "ZSHYJ",
+          "desc": "审核意见",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "序号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "序号名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PROVINCECODE",
+          "desc": "省公司单位编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INVOICEID",
+          "desc": "发票登记号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INVOICECODEID",
+          "desc": "发票可申请标识号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURCHASECODE",
+          "desc": "采购订单编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURCHASELINECODE",
+          "desc": "采购订单行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CONTRACTID",
+          "desc": "合同标识符",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INVOICECODE",
+          "desc": "发票号码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INVOICETYPECODE",
+          "desc": "发票代码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INVOICEDATE",
+          "desc": "开票日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "TOTALAMOUNT",
+          "desc": "价税合计金额",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "NOTTAXAMOUNTS",
+          "desc": "不含税金额",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "TOTALRATE",
+          "desc": "税率",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "TOTALTAX",
+          "desc": "税额",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SELLNAME",
+          "desc": "销货单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SELLTAXID",
+          "desc": "销货单位纳税人识别号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SELLADDTEL",
+          "desc": "销货单位地址、电话",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SELLBANKACCT",
+          "desc": "销货单位开户行及账号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LOCALMATERIALID",
+          "desc": "物料编码",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "LMATERIALNAME",
+          "desc": "货物或应税劳务名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LMATERIALMODE",
+          "desc": "规格型号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LMATERIALUNIT",
+          "desc": "单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INVOICECOUNT",
+          "desc": "数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NOTTAXPRICE",
+          "desc": "不含税单价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "NOTTAXAMOUNT",
+          "desc": "不含税金额",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "TAXRATE",
+          "desc": "税率",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "TAXSCALE",
+          "desc": "税额",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "APPRSTATES",
+          "desc": "审核状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DATAOPERFLAG",
+          "desc": "数据库操作标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SELLBANKCODE",
+          "desc": "销货单位银行编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CASHER",
+          "desc": "收款人",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "CHECKER",
+          "desc": "复核人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INVOICER",
+          "desc": "开票人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "REMARK",
+          "desc": "备注",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZBLR",
+          "desc": "办理人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WAERS",
+          "desc": "货币码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MEINS",
+          "desc": "基本计量单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZFLAG",
+          "desc": "传输标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZDESC",
+          "desc": "数据接收失败原因",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZDATE",
+          "desc": "上传日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZTIME",
+          "desc": "上传时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "RESERVESTR1",
+          "desc": "预留子表字段1",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RESERVESTR2",
+          "desc": "预留子表字段2",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RESERVESTR3",
+          "desc": "预留字段1",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RESERVESTR4",
+          "desc": "预留字段2",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RESERVESTR5",
+          "desc": "预留字段3",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZLYXT",
+          "desc": "来源系统",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "LOCALMATERIALID"
+      ]
+    },
+    {
+      "name": "fct_mat_YSSJJYS_df",
+      "desc": "货物交接单和到货验收单信息",
+      "columns": [
+        {
+          "name": "ZFLAG",
+          "desc": "传输标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "STORER_ID",
+          "desc": "仓储人员入库ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SIGN_DELIVERY_PROJECT",
+          "desc": "直发现场标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SIGN_DOCUMENTS_ID",
+          "desc": "签署单据文本ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SIGN_SYSTEM",
+          "desc": "签署系统",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "Z_YLZD1",
+          "desc": "冲销标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "Z_YLZD3",
+          "desc": "商务变更单行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "Z_YLZD2",
+          "desc": "商务变更单号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZZBDATE",
+          "desc": "工程滞后质保期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZTYDATE",
+          "desc": "工程滞后投运期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZWSXX",
+          "desc": "单据信息同步网商平台返回消息",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZWSCS",
+          "desc": "同步网商平台传输状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_DIST_TIME",
+          "desc": "预计到货期",
+          "type": "timestamp",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_ACCP_TIME",
+          "desc": "预计发货期",
+          "type": "timestamp",
+          "nullable": true
+        },
+        {
+          "name": "CUR_DIST_QTY",
+          "desc": "发货数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "REAL_RECV_ADDR",
+          "desc": "交货地点",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CONTACT_MOBILE",
+          "desc": "收货联系人手机",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RECV_CONTACT",
+          "desc": "收货联系人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SHIPPER_MOBILE",
+          "desc": "承运商联系人手机",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SHIPPER_NAME",
+          "desc": "承运商联系人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPP_MOBILE",
+          "desc": "供应商联系人手机",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPP_CONTACT",
+          "desc": "供应商联系人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPP_CODE",
+          "desc": "供应商编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_ITEM_CODE",
+          "desc": "合同行编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_CODE",
+          "desc": "合同标识符",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZDZHXX",
+          "desc": "电子化传输ECP返回信息",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZDZHCS",
+          "desc": "电子化传输ECP状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZQZSTATUS1",
+          "desc": "单据签字状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZQZSTATUS",
+          "desc": "单据签章状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "XCBZ",
+          "desc": "是否现场标志，X表示现场",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SGDW_NAME",
+          "desc": "施工单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SGDW_ID",
+          "desc": "施工单位编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SGUNITSIGN_ID",
+          "desc": "施工单位人手机号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "JLDW_NAME",
+          "desc": "监理单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "JLDW_ID",
+          "desc": "监理单位编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPUNITSIGN_ID",
+          "desc": "监理单位人手机号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPPLIERDS_ID",
+          "desc": "供应商交付人手机号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PROJECTRS_ID",
+          "desc": "项目单位接收人ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MATCOMPS_ID",
+          "desc": "物资供应公司ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CONSIGNEESIGN_ID",
+          "desc": "收货方ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DELIVERERSIGN_ID",
+          "desc": "发货方手机号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZLYXT",
+          "desc": "来源系统",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZMESS",
+          "desc": "电子化签署意见",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZDZH",
+          "desc": "单据电子化状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHHJSSL",
+          "desc": "换货接收数量(至今未收货的数量)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHHPZND_CX",
+          "desc": "冲销换货凭证年度",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHHPZH_CX",
+          "desc": "冲销换货凭证行",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHHPZ_CX",
+          "desc": "冲销换货凭证编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHHCXBS",
+          "desc": "换货冲销标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHHPZND",
+          "desc": "换货凭证年度",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHHPZH",
+          "desc": "换货凭证行",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHHPZ",
+          "desc": "换货凭证编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZUSER",
+          "desc": "用户id",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZQXDATE",
+          "desc": "取消交接/验收日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZGJAHR_CX",
+          "desc": "冲销物料凭证年度",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZEILE_CX",
+          "desc": "冲销物料凭证中的项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZMBLNR_CX",
+          "desc": "冲销物料凭证编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZCXBS",
+          "desc": "冲销标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZTEXT",
+          "desc": "凭证抬头文本",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZDATE",
+          "desc": "同步ECP日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZDESC",
+          "desc": "数据接收失败原因",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "序号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "序号名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PROVINCECODE",
+          "desc": "省公司单位编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DELIVERIFCODE",
+          "desc": "到货交接单号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INVOICETYPE",
+          "desc": "单据类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPPLYPLANCODE",
+          "desc": "供应计划编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NOTICE_CODE",
+          "desc": "发货通知编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURCHASECODE",
+          "desc": "采购订单编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURCHASELINECODE",
+          "desc": "采购订单行项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ACTUALJHDATE",
+          "desc": "实际交货期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "HANDOVERAMOUNT",
+          "desc": "交接数量",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "RETURNAMOUNT",
+          "desc": "换货数量",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "ACTUALDHMOUNT",
+          "desc": "实际到货数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PLANSTATES",
+          "desc": "供应计划状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DELIVERERSIGN",
+          "desc": "发货方（签字）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DELIVERERSIGNDAY",
+          "desc": "发货方（时间）",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "CONSIGNEESIGN",
+          "desc": "收货方（签字）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CONSIGNEESIGNDAY",
+          "desc": "收货方（时间）",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "MATCOMPANYSIGN",
+          "desc": "物资供应公司（签字）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MATCOMSIGNDATE",
+          "desc": "物资供应公司（时间）",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "PROJECTRECEIVEDS",
+          "desc": "项目单位接收人（签字）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PROJECTSIGNDATE",
+          "desc": "项目单位接收人（时间）",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "SUPPLIERDELIVERS",
+          "desc": "供应商交付人（签字）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPPLIERSIGNDATE",
+          "desc": "供应商交付人（时间）",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "DATAOPERFLAG",
+          "desc": "数据库操作标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RESERVESTR1",
+          "desc": "预留字段1",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RESERVESTR2",
+          "desc": "预留字段2",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RESERVESTR3",
+          "desc": "预留字段3",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "REMARK",
+          "desc": "备注",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPUNITSIGN",
+          "desc": "监理单位人（签字）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPUNITSIGNDATE",
+          "desc": "监理单位人（时间）",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "SGUNITSIGN",
+          "desc": "施工单位人（签字）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SGUNITSIGNDATE",
+          "desc": "施工单位人（时间）",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "RESERVESTR4",
+          "desc": "预留字段4",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RESERVESTR5",
+          "desc": "预留字段5",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RESERVESTR6",
+          "desc": "预留子表字段1",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RESERVESTR7",
+          "desc": "预留子表字段2",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RESERVESTR8",
+          "desc": "预留子表字段3",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZDJZT",
+          "desc": "单据状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LGORT",
+          "desc": "库存地点",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LGOBE",
+          "desc": "库存地点描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MBLNR",
+          "desc": "物料凭证",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZEILE",
+          "desc": "物料凭证中的项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "GJAHR",
+          "desc": "物料凭证年度",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ERNAM",
+          "desc": "更改者",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ERNAMTXT",
+          "desc": "更改者描述",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "MEINS",
+          "desc": "计量单位",
+          "type": "string",
+          "nullable": true
+        }
+      ]
+    },
+    {
+      "name": "fct_mat_YSSJSFP_DF",
+      "desc": "寄售采购订单发票信息",
+      "columns": [
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "INVOICEMONERTAX",
+          "desc": "发票含税金额",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "INVOICEMONER",
+          "desc": "发票含税金额",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "INVOICEDATE",
+          "desc": "发票日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "INVOICECODE",
+          "desc": "发票代码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "INVOICENUM",
+          "desc": "发票号码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "USNAME",
+          "desc": "用户名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "UNAME",
+          "desc": "用户名",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ORDERNUM",
+          "desc": "寄售物资结算单号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DDTYPE",
+          "desc": "结算类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ebelp",
+          "desc": "寄售采购订单行项目号",
+          "type": "integer",
+          "nullable": true
+        },
+        {
+          "name": "ebeln",
+          "desc": "寄售采购订单号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZEILE",
+          "desc": "物料凭证中的项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MJAHR",
+          "desc": "物料凭证年度",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MBLNR",
+          "desc": "物料凭证编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "序号名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "序号",
+          "type": "string",
+          "nullable": true
+        }
+      ]
+    },
+    {
+      "name": "fct_mat_YSSWZGYGCXXB_df",
+      "desc": "物资供应过程信息表",
+      "columns": [
+        {
+          "name": "BACK_QTY",
+          "desc": "退货数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "EFFECTIVEDATE",
+          "desc": "协议生效日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZXYSX",
+          "desc": "协议浮动比例",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "ZGHDBL",
+          "desc": "供货单金额占中标金额百分比",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "RATE4",
+          "desc": "供货单金额百分比",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "RATE3",
+          "desc": "供货单数量百分比",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "ZSQBL",
+          "desc": "已申请分配金额占中标金额百分比",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "RATE2",
+          "desc": "已分配申请金额百分比",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "XYJZRQ",
+          "desc": "协议截止日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "XYKSRQ",
+          "desc": "协议开始日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "KJSXZT",
+          "desc": "框架生效状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KJXYXXMBH",
+          "desc": "协议库存行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_CODE",
+          "desc": "协议库存号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "XQRQ",
+          "desc": "需求日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "posid",
+          "desc": "WBS编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "XQSL",
+          "desc": "需求数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TYPE_NAME",
+          "desc": "采购申请凭证类型名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "XQLX",
+          "desc": "需求类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "XQJHSBSJ",
+          "desc": "需求计划上报时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "XQPCBH",
+          "desc": "需求批次编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "XQJHBH",
+          "desc": "需求计划编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "charg",
+          "desc": "最早入库批次",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RKRXM",
+          "desc": "入库人姓名",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "RKRQ",
+          "desc": "入库日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "SJLY",
+          "desc": "数据来源",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "loekz",
+          "desc": "采购凭证删除标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "UPD_PURORD_ROW_CODE",
+          "desc": "新采购订单行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "UPD_PURORD_CODE",
+          "desc": "新采购订单编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KEY_MAT_FLAG",
+          "desc": "是否重点物资",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BGJHSLYY",
+          "desc": "变更交货数量原因",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BGHSL",
+          "desc": "变更后数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DLV_FLAG",
+          "desc": "交货完成标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TOT_ACCP_QTY",
+          "desc": "累计验收数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EXCHANGE_QTY",
+          "desc": "换货数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "ID主键",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "ID主键描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_MAT_ITEM_ID",
+          "desc": "合同物料项ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_ID",
+          "desc": "合同ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURORD",
+          "desc": "采购订单编号",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "PURORD_CODE",
+          "desc": "采购订单行项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_ITEM_CODE",
+          "desc": "电子商务平台合同行项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPP_ID",
+          "desc": "供应商编号",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "SUPP_NAME",
+          "desc": "供应商名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "banfn",
+          "desc": "采购申请编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BNFPO",
+          "desc": "采购申请行项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ENG_CODE",
+          "desc": "单体工程编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CFM_DLV_TIME",
+          "desc": "确定交货期",
+          "type": "timestamp",
+          "nullable": true
+        },
+        {
+          "name": "DLV_ADDR",
+          "desc": "交货地点",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zjsgfid",
+          "desc": "技术规范书ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MAT_CODE",
+          "desc": "物料编码",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "MAT_NAME",
+          "desc": "物料描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MEAS_UNIT_TYPE",
+          "desc": "采购计量单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "QTY",
+          "desc": "数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "UNTAX_UNIT_PRICE",
+          "desc": "不含税单价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "BHSZJ",
+          "desc": "不含税总价（元）",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "tax_rate",
+          "desc": "税率",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "ERP_AGREEMENT_CODE",
+          "desc": "ERP协议库存号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ENG_NAME",
+          "desc": "工程名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PRJ_NAME",
+          "desc": "项目名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "JHDDLX",
+          "desc": "合同物料项交货方式",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SHDDLX",
+          "desc": "收货地点类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "XQDWBM",
+          "desc": "需求单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SP_CODE",
+          "desc": "供应计划编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURORD_QTY",
+          "desc": "招标订单数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_DLV_QTY1",
+          "desc": "计划交货数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_DLV_BAT",
+          "desc": "计划交货批次",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SP_STATUS",
+          "desc": "供应计划状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_ACCP_TIME",
+          "desc": "预计送达日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "NOTICE_CODE",
+          "desc": "发货通知编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_DIST_TIME",
+          "desc": "预计发货期",
+          "type": "timestamp",
+          "nullable": true
+        },
+        {
+          "name": "CFM_NOTICE_STATUS",
+          "desc": "发货通知状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "REAL_RECV_ADDR",
+          "desc": "实际收货地址",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "VEHICLE_QTY",
+          "desc": "发车数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CFM_TIME",
+          "desc": "发货通知确认日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ACCP_CODE",
+          "desc": "货物验收单编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ACCP_STATUS",
+          "desc": "货物验收单状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ACCP_QTY",
+          "desc": "实际交货数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ERP_QTY",
+          "desc": "ERP入库数量",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "MAT_CODE",
+        "PURORD",
+        "SUPP_ID"
+      ]
+    },
+    {
+      "name": "fct_mat_YSSXMTYD_df",
+      "desc": "项目投运单",
+      "columns": [
+        {
+          "name": "CONST_CHF_NAME",
+          "desc": "建管单位负责人签字",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "CONST_CHF_SIGN_TIME",
+          "desc": "建管单位负责人签字日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "ID主键",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "ID主键描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZTYDH",
+          "desc": "投运单号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZTYDHH",
+          "desc": "投运单行号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZEBELN",
+          "desc": "采购凭证号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZEBELP",
+          "desc": "采购凭证的项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZJFHTBH",
+          "desc": "合同编号(经法)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZPULEV",
+          "desc": "需求单位（网省代码）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZPSPID",
+          "desc": "项目定义",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZPOST1",
+          "desc": "项目名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZMENGE",
+          "desc": "投运数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZLIFNR",
+          "desc": "供应商或债权人的帐号",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "NAME2",
+          "desc": "名称 1",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZZJRQ",
+          "desc": "创建日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZTYRQ",
+          "desc": "投运日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZSTATUS",
+          "desc": "单据签署完成标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZPROJECTSIGN",
+          "desc": "项目负责人签字",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZPROJECTSIGNDATE",
+          "desc": "项目负责人签字日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZLYXT",
+          "desc": "来源系统",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZCJSJ",
+          "desc": "记录的创建时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZDATE",
+          "desc": "同步网商日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZFLAG",
+          "desc": "同步网商结果1成功0失败",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZDESC",
+          "desc": "同步网商消息",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ONLINE_COND_FLAG",
+          "desc": "是否具备投运条件",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "OP_FLAG",
+          "desc": "数据库操作标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MATNR",
+          "desc": "物料号",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "MAKTX",
+          "desc": "物料描述（短文本）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WERKS",
+          "desc": "工厂",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME1",
+          "desc": "名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZMEINS",
+          "desc": "基本计量单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZSIGN",
+          "desc": "单据签章状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZSIGN1",
+          "desc": "单据签字状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZDATEECP2",
+          "desc": "同步ECP2.0日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZRESULTECP2",
+          "desc": "同步ECP2.0结果 1 成功 0失败",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZMSGECP2",
+          "desc": "同步ECP2.0消息",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "Z_YLZD1",
+          "desc": "预留字段1",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "Z_YLZD2",
+          "desc": "预留字段2",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "Z_YLZD3",
+          "desc": "预留字段3",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "Z_YLZD4",
+          "desc": "预留字段4",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "Z_YLZD5",
+          "desc": "预留字段5",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZJSRY",
+          "desc": "结算人员ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TYZBZT",
+          "desc": "投运质保状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHTBH",
+          "desc": "电子商务合同编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZDTGC",
+          "desc": "单体工程名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHTSL",
+          "desc": "合同数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SIGN_SYSTEM",
+          "desc": "签署系统",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SIGN_DOCUMENTS_ID",
+          "desc": "签署单据文本ID",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "MATNR",
+        "ZLIFNR"
+      ]
+    },
+    {
+      "name": "fct_mat_YSSZBCGQKB_df",
+      "desc": "招标采购情况表",
+      "columns": [
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "XYKCBH",
+          "desc": "协议库存编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_LAW_CODE",
+          "desc": "合同编号（经法合同编号）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_CODE",
+          "desc": "合同编号（ECP合同编号）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TAX_AMT",
+          "desc": "合同金额",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "ZBTZBH",
+          "desc": "中标通知编号（系统生成唯一标识）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUB_DATE",
+          "desc": "中标通知生成日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "budget_unit_price",
+          "desc": "概算单价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "budget_tot_price",
+          "desc": "概算总价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "discount_rate",
+          "desc": "折扣率",
+          "type": "decimal(5,2)",
+          "nullable": true
+        },
+        {
+          "name": "attbid_tot_price",
+          "desc": "投标总价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "SFYHLBJ",
+          "desc": "是否优惠率报价（1：是；0：否）",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "ZBRMC",
+          "desc": "中标人名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPP_ID",
+          "desc": "中标人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "purprj_status",
+          "desc": "项目状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WINBID_FLAG",
+          "desc": "项目中标标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "OPENBID_TIME",
+          "desc": "开标日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "TBJZRQ",
+          "desc": "投标截止日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "pub_time",
+          "desc": "投标开始日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "SSZTMC",
+          "desc": "实施主体名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "org_id",
+          "desc": "实施单位ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DEMAND_ORG_NAME",
+          "desc": "需求单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BIDPKG_BUDGET",
+          "desc": "包概算金额",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "PUR_TYPE",
+          "desc": "采购类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "pur_year",
+          "desc": "招标年份",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "purprj_name",
+          "desc": "采购项目名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURPRJ_CODE",
+          "desc": "采购项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUBBID_NAME",
+          "desc": "采购项目分标名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUBBID_CODE",
+          "desc": "采购项目分标编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUBBID_ID",
+          "desc": "采购项目分标号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BIDPKG_NAME",
+          "desc": "采购项目分包名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BIDPKG_CODE",
+          "desc": "采购项目分包号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "bidpkg_id",
+          "desc": "分包ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_YEAR",
+          "desc": "招标计划年度",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "bid_type",
+          "desc": "采购方式",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PLAN_NAME",
+          "desc": "招标计划名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BAT_PLAN_CODE",
+          "desc": "批次计划编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PROV_REQ_UNIQUE_CODE",
+          "desc": "采购申请行+行号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "ID主键描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "ID主键",
+          "type": "string",
+          "nullable": true
+        }
+      ]
+    },
+    {
+      "name": "fct_mat_YSSZBGG_df",
+      "desc": "招标公告",
+      "columns": [
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "VIS_FLAG",
+          "desc": "是否可视化项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PUR_YEAR",
+          "desc": "采购年份",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "E_MAIL",
+          "desc": "电子邮箱",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TAX",
+          "desc": "传真",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "TEL",
+          "desc": "联系电话",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CONTACT",
+          "desc": "联系人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BID_AGT_ADDR_ZIP_CODE",
+          "desc": "招标代理机构邮编",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BID_AGT_ADDR",
+          "desc": "招标代理机构地址",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BID_AGT",
+          "desc": "招标代理机构",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BID_ORG",
+          "desc": "招标人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BID_BEGIN_TIME",
+          "desc": "竞价开始时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "PAY_MODE",
+          "desc": "付款方式",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "PUB_TIME",
+          "desc": "发布时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "NOTICE_STATUS",
+          "desc": "变更公告状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CHG_NOTICE_E_SIGN_STATUS",
+          "desc": "变更公告电子签名状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CHG_NOTICE_E_SIGN_NAME",
+          "desc": "变更公告电子签名名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CHG_NOTICE_E_SIGN",
+          "desc": "变更公告电子签名路径",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CHG_NOTICE_CONT",
+          "desc": "变更公告内容",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NOTICE_TYPE",
+          "desc": "招标公告类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DECRYPT_TIME",
+          "desc": "开始解密时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "BIDBOOK_BUY_END_TIME",
+          "desc": "标书购买截止时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "OPENBID_TIME",
+          "desc": "开标（截标）时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "OPENBID_ADDR",
+          "desc": "开标地点",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "BIDBOOK_SELL_BEGIN_TIME",
+          "desc": "标书购买开始时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "PRJ_INTRODUCE",
+          "desc": "项目介绍",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "EVABID_END_TIME",
+          "desc": "评标结束时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "EVABID_BEGIN_TIME",
+          "desc": "评标开始时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "PUR_TYPE",
+          "desc": "采购类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURPRJ_ID",
+          "desc": "采购项目ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURPRJ_NAME",
+          "desc": "采购项目名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURPRJ_CODE",
+          "desc": "采购项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NOTICE_NAME",
+          "desc": "公告名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ONLINE_BID_NOTICE_ID",
+          "desc": "招标公告ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "ID主键描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "ID主键",
+          "type": "string",
+          "nullable": true
+        }
+      ]
+    },
+    {
+      "name": "fct_mat_YYSwzhtlvjs_df",
+      "desc": "物资合同履约结算情况表",
+      "columns": [
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "WARR",
+          "desc": "质保期月数",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "warr_dispose_time",
+          "desc": "质保期",
+          "type": "timestamp",
+          "nullable": true
+        },
+        {
+          "name": "warr_status",
+          "desc": "质保单签署状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SN",
+          "desc": "质保单号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "online_status",
+          "desc": "投运单签署状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "online_qty",
+          "desc": "投运数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "online_time",
+          "desc": "投运日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ENG_NAME",
+          "desc": "投运工程名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "online_code",
+          "desc": "投运单号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "accp_status",
+          "desc": "验收单签署状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "back_qty",
+          "desc": "退货数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "exchange_qty",
+          "desc": "换货数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "accp_qty",
+          "desc": "验收数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "accp_code",
+          "desc": "到货验收单号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "package_cond",
+          "desc": "是否异常情况",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hdov_status",
+          "desc": "交接单签署状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "HDOV_CODE",
+          "desc": "货物交接单号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hdov_time",
+          "desc": "实际交货日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "dlv_addr",
+          "desc": "实际交货地点",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hdov_qty",
+          "desc": "实际交货数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "mat_des",
+          "desc": "物料描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "mat_code_id",
+          "desc": "物料编码",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "CON_DLV_TIME",
+          "desc": "合同交货期",
+          "type": "timestamp",
+          "nullable": true
+        },
+        {
+          "name": "BUYER_SIGN_TIME",
+          "desc": "合同签订日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "PAY_RATE",
+          "desc": "付款比例",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "TAX_AMT",
+          "desc": "合同金额",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "ORG_NAME",
+          "desc": "供应商名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SUPP_ID",
+          "desc": "供应商编号",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "notice_code",
+          "desc": "发货通知编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_NAME",
+          "desc": "合同名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_LAW_CODE",
+          "desc": "合同编号（经法合同编号）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "CON_CODE",
+          "desc": "合同编号（ECP合同编号）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURORD_CODE",
+          "desc": "采购订单行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "PURORD",
+          "desc": "采购订单编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "con_id",
+          "desc": "合同ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "ID主键描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "ID主键",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "SUPP_ID",
+        "mat_code_id"
+      ]
+    },
+    {
+      "name": "fct_mat_yssmaterial_df",
+      "desc": "物料主数据",
+      "columns": [
+        {
+          "name": "posid",
+          "desc": "WBS编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "SUPP_NAME",
+          "desc": "供应商名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "lifnr",
+          "desc": "期望供应商",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zqqcj",
+          "desc": "前期厂家",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KTPNR",
+          "desc": "主要采购协议的项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KONNR",
+          "desc": "重要的采购协议号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZSCZT",
+          "desc": "上报国网的状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "qgdly",
+          "desc": "专区采购请购单来源",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zqgdhxm",
+          "desc": "专区采购请购单行号请购单行项目（采购专区）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zqgdh",
+          "desc": "专区采购请购单号请购单号（采购专区）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zzbjhmc",
+          "desc": "采购批次名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zzbjhbh",
+          "desc": "采购批次编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zcgms",
+          "desc": "采购模式",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zcgcl",
+          "desc": "采购方式",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zcgfs",
+          "desc": "采购方式",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zjhdd",
+          "desc": "交货地点",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "anln1",
+          "desc": "资产编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "prctr",
+          "desc": "利润中心",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ktext",
+          "desc": "成本中心名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "kostl",
+          "desc": "成本中心编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SAKTO",
+          "desc": "总帐科目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "WBSYS",
+          "desc": "wbs描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "ID主键",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "ID主键描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "banfn",
+          "desc": "采购申请编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "bnfpo",
+          "desc": "采购申请行项目号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "werks",
+          "desc": "工厂编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "DEMAND_ORG_NAME",
+          "desc": "申请单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "afnam",
+          "desc": "申请人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "lgort",
+          "desc": "库存地点",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "lgobe",
+          "desc": "库存地点描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ekgrp",
+          "desc": "采购组",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "MATNR",
+          "desc": "物料编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "matcodedes",
+          "desc": "物料名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "maxcat_code",
+          "desc": "物料大类编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "maxcat_name",
+          "desc": "物料大类描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "medcat_code",
+          "desc": "物料中类编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "medcat_name",
+          "desc": "物料中类描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "mincat_code",
+          "desc": "物料小类(物料组)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "mincat_name",
+          "desc": "物料小类描述(物料组描述)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zsfbz",
+          "desc": "国网标准物料",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "bsart",
+          "desc": "采购申请凭证类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "bsartms",
+          "desc": "采购申请凭证类型描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "bstyp",
+          "desc": "采购凭证类别",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "loekz",
+          "desc": "采购凭证删除标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "banpr",
+          "desc": "申请处理状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "frgzu",
+          "desc": "版本状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "statu",
+          "desc": "采购申请处理状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zjsgfid",
+          "desc": "技术规范书ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "menge",
+          "desc": "申请数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "measunittype",
+          "desc": "计量单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "msehl",
+          "desc": "计量单位描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "preis",
+          "desc": "评价价格",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "rlwrt",
+          "desc": "采购申请总金额",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "budget_unit_price",
+          "desc": "概算单价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "budget_tot_price",
+          "desc": "概算总价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "badat",
+          "desc": "采购年份",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "XQSQTBRQ",
+          "desc": "需求申请提报日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "lfdat",
+          "desc": "计划交货日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "frgkz",
+          "desc": "采购申请批准描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "frgdt",
+          "desc": "采购申请批准日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ps_psp_pnr",
+          "desc": "工作分解结构元素(wbs元素)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "pspid",
+          "desc": "项目编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "post1",
+          "desc": "项目名称",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "matnr"
+      ]
+    },
+    {
+      "name": "fct_mat_ysssupply_df",
+      "desc": "供应商主数据",
+      "columns": [
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ZISEG",
+          "desc": "是否电厂供应商",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZISDER",
+          "desc": "是否分布式发电供应商",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZISBID",
+          "desc": "是否招标注册供应商",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZDWXZ",
+          "desc": "企业性质",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHYFLNAME",
+          "desc": "行业分类名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZHYFL",
+          "desc": "行业分类编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZTYXYDM",
+          "desc": "统一社会信用代码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "region",
+          "desc": "地区",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "bankn",
+          "desc": "银行代码-为mdm的开户银行对应",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "bankl",
+          "desc": "开户银行",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "statu_id",
+          "desc": "状态标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "SPERQ",
+          "desc": "冻结功能",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "corporation",
+          "desc": "企业法人",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "city1",
+          "desc": "城市",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "street",
+          "desc": "地址",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zcjrq",
+          "desc": "创建日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "SUPP_NAME",
+          "desc": "名称 1",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "LIFNR",
+          "desc": "供应商编码",
+          "type": "string",
+          "nullable": false
+        },
+        {
+          "name": "beiy1",
+          "desc": "供应商或债权人的帐号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "NAME",
+          "desc": "ID主键描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ID",
+          "desc": "ID主键",
+          "type": "string",
+          "nullable": true
+        }
+      ],
+      "primary_key": [
+        "LIFNR"
+      ]
+    },
+    {
+      "name": "dim_cst_zcqsm_cgml_index",
+      "desc": "采购目录",
+      "columns": [
+        {
+          "name": "zfbnd",
+          "desc": "发布年度",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zwzdl",
+          "desc": "物资大类",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zwzzl",
+          "desc": "物资中类",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zwzxl",
+          "desc": "物资小类",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zssfw",
+          "desc": "实施范围",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zcgfs",
+          "desc": "建议采购方式",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zcgzzfs",
+          "desc": "建议采购组织方式",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zbz",
+          "desc": "备注",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zcgml",
+          "desc": "国网/省网目录",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zyjfl",
+          "desc": "一级分类（配置）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zejfl",
+          "desc": "二级分类（配置）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zdydj",
+          "desc": "电压等级（配置）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zzyxf",
+          "desc": "专业细分（配置）",
+          "type": "string",
+          "nullable": true
+        }
+      ]
+    },
+    {
+      "name": "dws_ast_zcqsm_wlfwzsj_info_mf",
+      "desc": "物料、服务主数据",
+      "columns": [
+        {
+          "name": "rs_id",
+          "desc": "资源编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "mat_code",
+          "desc": "物料编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "mat_name",
+          "desc": "物料描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "mat_desc",
+          "desc": "物料长描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "max_class_code",
+          "desc": "大类",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "max_class_name",
+          "desc": "大类描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "mid_class_code",
+          "desc": "中类",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "mid_class_name",
+          "desc": "中类描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "min_class_code",
+          "desc": "小类",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "min_class_name",
+          "desc": "小类描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "unit_code",
+          "desc": "计量单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "unit_name",
+          "desc": "计量单位名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "is_commend_stock",
+          "desc": "是否国网推荐采购",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "materiel_type",
+          "desc": "物料类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "sys_stock",
+          "desc": "系统采购标准",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "manual_stock",
+          "desc": "手工采购标准",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "managemark",
+          "desc": "管理标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "propval_name",
+          "desc": "电压等级（物料）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "status",
+          "desc": "物料状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "matlevel",
+          "desc": "物料分级",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "matstdflag",
+          "desc": "采购标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "crttime",
+          "desc": "创建时间（ECP）",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "matnr",
+          "desc": "是否同步（ERP）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ersda",
+          "desc": "创建时间（ERP）",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "lvorm",
+          "desc": "是否启用（ERP）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "stat_month",
+          "desc": "yyyymm",
+          "type": "string",
+          "nullable": true
+        }
+      ]
+    },
+    {
+      "name": "dws_ast_zcqsm_wzsj_cgsq_info_mf",
+      "desc": "采购申请",
+      "columns": [
+        {
+          "name": "SAKTO",
+          "desc": "总帐科目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "g_create_time",
+          "desc": "数据抽取时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "SUPP_NAME",
+          "desc": "供应商名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "lifnr",
+          "desc": "期望供应商",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zqqcj",
+          "desc": "前期厂家",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KTPNR",
+          "desc": "主要采购协议的项目编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "KONNR",
+          "desc": "重要的采购协议号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ZSCZT",
+          "desc": "上报国网的状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "mandt",
+          "desc": "客户端",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "scbs_cgsq",
+          "desc": "删除标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "yxbs",
+          "desc": "有效标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cgsq",
+          "desc": "采购申请",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hxm_cgsq",
+          "desc": "行项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cgms",
+          "desc": "采购描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "wlbm",
+          "desc": "物料编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "wlms",
+          "desc": "物料描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fwbh",
+          "desc": "服务编号",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "fwbhms",
+          "desc": "服务编号描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "wlz",
+          "desc": "物料组",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "wlzms",
+          "desc": "物料组描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cgxzbm",
+          "desc": "采购性质编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cgxzms",
+          "desc": "采购性质描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "pzlx_cgsq",
+          "desc": "凭证类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "pzlxmc",
+          "desc": "凭证类型名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "pzbs_cgsq",
+          "desc": "批准标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "pzbsms",
+          "desc": "批准标识描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cjz",
+          "desc": "创建者",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cjzxm",
+          "desc": "创建者姓名",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ssdq",
+          "desc": "所属地区",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "gcbm",
+          "desc": "工厂编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "gcms",
+          "desc": "工厂描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cgzz",
+          "desc": "采购组织",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cgzzms",
+          "desc": "采购组织描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cgz",
+          "desc": "采购组",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cgzms",
+          "desc": "采购组描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "sqsl",
+          "desc": "申请数量",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "jldw",
+          "desc": "计量单位",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "sqdj",
+          "desc": "申请单价",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "jgdw",
+          "desc": "价格单位",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "sqzj",
+          "desc": "申请总价（审批后）",
+          "type": "decimal(18,2)",
+          "nullable": true
+        },
+        {
+          "name": "jsgfsid",
+          "desc": "技术规范书ID",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cgpcbm",
+          "desc": "采购批次编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cgpcmc",
+          "desc": "采购批次名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zsgcgpc",
+          "desc": "首个采购批次",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "kjxy",
+          "desc": "框架协议",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hxm_kjxy",
+          "desc": "行项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "glbs",
+          "desc": "关联标识:1补充关联 0:正常关联",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cgdd",
+          "desc": "采购订单",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hxm_cgdd",
+          "desc": "行项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "scbs_cgdd",
+          "desc": "删除标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "qgdh_ds",
+          "desc": "请购单号（电商采购专区）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hxm_qgdh_ds",
+          "desc": "行项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "qgdh_ksh",
+          "desc": "请购单号（可视化选购专区）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "hxm_qgdh_ksh",
+          "desc": "行项目",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "wsqgd",
+          "desc": "网商请购单",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "wbs",
+          "desc": "WBS元素",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "wbsms",
+          "desc": "WBS描述",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "xmbm",
+          "desc": "项目编码",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "xmmc",
+          "desc": "项目名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "wbs_dt",
+          "desc": "WBS元素（单体）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "wbsms_dt",
+          "desc": "WBS描述（单体）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "cjrq",
+          "desc": "创建日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "jhrq",
+          "desc": "交货日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "pzrq",
+          "desc": "批准日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "stat_month",
+          "desc": "yyyymm",
+          "type": "string",
+          "nullable": true
+        }
+      ]
+    },
+    {
+      "name": "ods_erp_p00_sapsr3_ztmmjy_tw_zbpc",
+      "desc": "采购批次",
+      "columns": [
+        {
+          "name": "mandt",
+          "desc": "客户端",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zzbnd",
+          "desc": "年份",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zzbpc",
+          "desc": "批次(jyh02)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zzjht",
+          "desc": "国网物资/省网物资/服务",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zzbjhbh",
+          "desc": "计划编号(jyh06)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zzblx",
+          "desc": "计划类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zzbjhmc1",
+          "desc": "计划名称(jyh18)",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zzyksrq",
+          "desc": "采购招标预申报开始时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zzyjzrq",
+          "desc": "采购招标预申报截止时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zzbksrq",
+          "desc": "计划申报开始时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zzbjzrq",
+          "desc": "计划申报截止时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zzbscks",
+          "desc": "评审开始时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zzbscjs",
+          "desc": "评审结束时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zzbfbrq",
+          "desc": "发布公告时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zzbgbhs",
+          "desc": "文件购买开始时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zzbgbjz",
+          "desc": "文件购买截止时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zjbsj",
+          "desc": "截标时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zzbjb",
+          "desc": "开始解密时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zzbkbrq",
+          "desc": "拟定开标时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zzbdbrq",
+          "desc": "定标时间",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zzbsbfs",
+          "desc": "招标方式",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zqyzt",
+          "desc": "启用状态",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zfield1",
+          "desc": "计划名称",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zxmwz",
+          "desc": "是否项目物资招标",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zzjxrq",
+          "desc": "基线日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zdwb",
+          "desc": "短文本",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zflg",
+          "desc": "物资公司负责标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zkzsl",
+          "desc": "协议数量控制标识",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zsszt",
+          "desc": "实施主体",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zcgfw",
+          "desc": "采购范围",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zxzrq",
+          "desc": "新增日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "zxzly",
+          "desc": "新增来源",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zxzlx",
+          "desc": "新增类型",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zxzxmxz",
+          "desc": "新增项目性质",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ztzrq",
+          "desc": "调整日期",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ztzyy",
+          "desc": "调整原因",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "zecp",
+          "desc": "寻源系统",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ext_date_time",
+          "desc": "该字段标识数据操作更新时间，规范格式为YYYY-MM-DD HH:MM:SS",
+          "type": "date",
+          "nullable": true
+        },
+        {
+          "name": "ext_ogg_seq",
+          "desc": "该字段标识数据增长序列，自动生成，用于对数据增删改操作进行判断",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ext_flag",
+          "desc": "该字段标识该表数据的增量机制，自动生成（“I”表示新增，“U”表示更新，“D”表示删除）",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ext_src_system",
+          "desc": "该字段标识该表数据的来源业务系统，参考附件“业务系统编码列表”",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ext_provincial_flag",
+          "desc": "该字段标识数据来源省市参考附件“省（市）标识列表”",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ext_rowid",
+          "desc": "该字段标识数据行ID，从源端同步获取",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ext_reserve1",
+          "desc": "该字段标识用于拓展备用",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ext_reserve2",
+          "desc": "该字段标识用于拓展备用",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ext_reserve3",
+          "desc": "该字段标识用于拓展备用",
+          "type": "string",
+          "nullable": true
+        },
+        {
+          "name": "ext_valid_flag",
+          "desc": "该字段标识数据是否有效（“0”表示无效；“1”表示有效；默认有效）",
+          "type": "string",
+          "nullable": true
+        }
+      ]
+    }
+  ]
+}

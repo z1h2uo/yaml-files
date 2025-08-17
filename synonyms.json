@@ -1,0 +1,154 @@
+{
+  "synonyms": [
+    {
+      "phrase": "到期日",
+      "map_to": "UN01_03_ERP_CD_EKPO.DPDAT",
+      "alias": "预付到期日"
+    },
+    {
+      "phrase": "合同名",
+      "map_to": "DWD_MAT_CON_ITEM.CON_NAME",
+      "alias": "合同名称"
+    },
+    {
+      "phrase": "预付到期",
+      "map_to": "UN01_03_ERP_CD_EKPO.DPDAT",
+      "alias": "预付到期日"
+    },
+    {
+      "phrase": "预付金额",
+      "map_to": "UN01_03_ERP_CD_EKPO.DPAMT",
+      "alias": "预付款金额"
+    },
+    {
+      "phrase": "预付比例",
+      "map_to": "UN01_03_ERP_CD_EKPO.DPPCT",
+      "alias": "预付款百分比"
+    },
+    {
+      "phrase": "合同名称",
+      "map_to": "DWD_MAT_CON_ITEM.CON_NAME",
+      "alias": "合同名称"
+    },
+    {
+      "phrase": "预付到期日",
+      "map_to": "UN01_03_ERP_CD_EKPO.DPDAT",
+      "alias": "预付到期日"
+    },
+    {
+      "phrase": "预付款金额",
+      "map_to": "UN01_03_ERP_CD_EKPO.DPAMT",
+      "alias": "预付款金额"
+    },
+    {
+      "phrase": "预付款数额",
+      "map_to": "UN01_03_ERP_CD_EKPO.DPAMT",
+      "alias": "预付款金额"
+    },
+    {
+      "phrase": "预付百分比",
+      "map_to": "UN01_03_ERP_CD_EKPO.DPPCT",
+      "alias": "预付款百分比"
+    },
+    {
+      "phrase": "预付款到期日",
+      "map_to": "UN01_03_ERP_CD_EKPO.DPDAT",
+      "alias": "预付到期日"
+    },
+    {
+      "phrase": "预付款百分比",
+      "map_to": "UN01_03_ERP_CD_EKPO.DPPCT",
+      "alias": "预付款百分比"
+    },
+    {
+      "phrase": "项目合同名称",
+      "map_to": "DWD_MAT_CON_ITEM.CON_NAME",
+      "alias": "合同名称"
+    },
+    {
+      "phrase": "预付比例(%)",
+      "map_to": "UN01_03_ERP_CD_EKPO.DPPCT",
+      "alias": "预付款百分比"
+    },
+    {
+      "phrase": "预付款金额(元)",
+      "map_to": "UN01_03_ERP_CD_EKPO.DPAMT",
+      "alias": "预付款金额"
+    },
+    {
+      "phrase": "建议方式",
+      "map_to": "DIM_PUR_CATALOG.SUG_PROC_METHOD",
+      "alias": "建议采购方式"
+    },
+    {
+      "phrase": "计划编号",
+      "map_to": "ZTMMJY_TW_ZBPC.ZZBJHBH",
+      "alias": "计划编号"
+    },
+    {
+      "phrase": "截止日期",
+      "map_to": "ZTMMJY_TW_ZBPC.ZZBJZRQ",
+      "alias": "计划截止日期"
+    },
+    {
+      "phrase": "计划截止日",
+      "map_to": "ZTMMJY_TW_ZBPC.ZZBJZRQ",
+      "alias": "计划截止日期"
+    },
+    {
+      "phrase": "建议采购方式",
+      "map_to": "DIM_PUR_CATALOG.SUG_PROC_METHOD",
+      "alias": "建议采购方式"
+    },
+    {
+      "phrase": "建议采购方法",
+      "map_to": "DIM_PUR_CATALOG.SUG_PROC_METHOD",
+      "alias": "建议采购方式"
+    },
+    {
+      "phrase": "建议组织方式",
+      "map_to": "DIM_PUR_CATALOG.SUG_ORG_METHOD",
+      "alias": "建议采购组织方式"
+    },
+    {
+      "phrase": "建议组织方法",
+      "map_to": "DIM_PUR_CATALOG.SUG_ORG_METHOD",
+      "alias": "建议采购组织方式"
+    },
+    {
+      "phrase": "计划批次编号",
+      "map_to": "ZTMMJY_TW_ZBPC.ZZBJHBH",
+      "alias": "计划编号"
+    },
+    {
+      "phrase": "批次计划编号",
+      "map_to": "ZTMMJY_TW_ZBPC.ZZBJHBH",
+      "alias": "计划编号"
+    },
+    {
+      "phrase": "计划截止日期",
+      "map_to": "ZTMMJY_TW_ZBPC.ZZBJZRQ",
+      "alias": "计划截止日期"
+    },
+    {
+      "phrase": "建议采购组织方式",
+      "map_to": "DIM_PUR_CATALOG.SUG_ORG_METHOD",
+      "alias": "建议采购组织方式"
+    },
+    {
+      "phrase": "合同名称",
+      "map_to": "fct_mat_YSSCGHT_df.CON_NAME",
+      "alias": "合同名称"
+    },
+    {
+      "phrase": "合同名称",
+      "map_to": "fct_mat_YYSwzhtlvjs_df.CON_NAME",
+      "alias": "合同名称"
+    },
+    {
+      "phrase": "计划编号",
+      "map_to": "ods_erp_p00_sapsr3_ztmmjy_tw_zbpc.zzbjhbh",
+      "alias": "计划编号"
+    }
+  ]
+}

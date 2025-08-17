@@ -1,0 +1,378 @@
+{
+  "joins": [
+    {
+      "left": {
+        "table": "DWD_MAT_CON_ITEM",
+        "columns": [
+          "PUR_ODR_ITEM_CODE"
+        ]
+      },
+      "right": {
+        "table": "UN01_03_ERP_CD_EKPO",
+        "columns": [
+          "EBELP"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "DWD_MAT_CON_ITEM表的字段PUR_ODR_ITEM_CODE作为主键，与UN01_03_ERP_CD_EKPO表的EBELP主键存在关系"
+    },
+    {
+      "left": {
+        "table": "DWD_MAT_CON_ITEM",
+        "columns": [
+          "PUR_ODR_CODE"
+        ]
+      },
+      "right": {
+        "table": "UN01_03_ERP_CD_EKPO",
+        "columns": [
+          "EBELN"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "DWD_MAT_CON_ITEM表的字段PUR_ODR_CODE作为主键，与UN01_03_ERP_CD_EKPO表的EBELN主键存在关系"
+    },
+    {
+      "left": {
+        "table": "DWD_MAT_CON_ITEM",
+        "columns": [
+          "HQ_REQ_UNIQUE_CODE"
+        ]
+      },
+      "right": {
+        "table": "DWD_MAT_PUR_REQ_ITEM_BIDPKG",
+        "columns": [
+          "HQ_REQ_UNIQUE_CODE"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.7,
+      "note": "[需复核] DWD_MAT_CON_ITEM缺列: HQ_REQ_UNIQUE_CODE | from: DWD_MAT_CON_ITEM表的字段HQ_REQ_UNIQUE_CODE作为主键，与DWD_MAT_PUR_REQ_ITEM_BIDPKG表的HQ_REQ_UNIQUE_CODE主键存在关系"
+    },
+    {
+      "left": {
+        "table": "DWD_MAT_CON_ITEM",
+        "columns": [
+          "HQ_REQ_UNIQUE_CODE"
+        ]
+      },
+      "right": {
+        "table": "DWD_MAT_WINBID_ITEM_20MAT",
+        "columns": [
+          "HQ_REQ_UNIQUE_CODE"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.7,
+      "note": "[需复核] DWD_MAT_CON_ITEM缺列: HQ_REQ_UNIQUE_CODE | from: DWD_MAT_CON_ITEM表的字段HQ_REQ_UNIQUE_CODE作为主键，与DWD_MAT_WINBID_ITEM_20MAT表的HQ_REQ_UNIQUE_CODE主键存在关系"
+    },
+    {
+      "left": {
+        "table": "DWD_MAT_CON_ITEM",
+        "columns": [
+          "PROV_REQ_CODE"
+        ]
+      },
+      "right": {
+        "table": "UN01_03_ERP_CD_EKPO",
+        "columns": [
+          "BANFN"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.7,
+      "note": "[需复核] DWD_MAT_CON_ITEM缺列: PROV_REQ_CODE | from: DWD_MAT_CON_ITEM表的字段PROV_REQ_CODE与UN01_03_ERP_CD_EKPO表的BANFN存在相映设关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_YSSCGDD_df",
+        "columns": [
+          "ebeln"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YSSCGSQSP_df",
+        "columns": [
+          "ebeln"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.7,
+      "note": "[需复核] fct_mat_YSSCGSQSP_df缺列: ebeln | from: fct_mat_YSSCGDD_df表的字段ebeln作为主键，与fct_mat_YSSCGSQSP_df表的ebeln主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_YSSCGDD_df",
+        "columns": [
+          "ebeln"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YSSCGHT_df",
+        "columns": [
+          "PURORD"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_YSSCGDD_df表的字段ebeln作为主键，与fct_mat_YSSCGHT_df表的PURORD主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_YSSCGDD_df",
+        "columns": [
+          "ebeln"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YSSWZGYGCXXB_df",
+        "columns": [
+          "PURORD"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_YSSCGDD_df表的字段ebeln作为主键，与fct_mat_YSSWZGYGCXXB_df表的PURORD主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_YSSCGHT_df",
+        "columns": [
+          "con_id"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YSSCGHTDetail_df",
+        "columns": [
+          "con_id"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_YSSCGHT_df表的字段con_id作为主键，与fct_mat_YSSCGHTDetail_df表的con_id主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_yssmaterial_df",
+        "columns": [
+          "matnr"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YSSCGSQ_df",
+        "columns": [
+          "MATNR"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.7,
+      "note": "[需复核] fct_mat_YSSCGSQ_df缺列: MATNR | from: fct_mat_yssmaterial_df表的字段matnr作为主键，与fct_mat_YSSCGSQ_df表的MATNR主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_yssmaterial_df",
+        "columns": [
+          "matnr"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YSSCGDD_df",
+        "columns": [
+          "MATNR"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_yssmaterial_df表的字段matnr作为主键，与fct_mat_YSSCGDD_df表的MATNR主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_yssmaterial_df",
+        "columns": [
+          "matnr"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YSSXMTYD_df",
+        "columns": [
+          "MATNR"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_yssmaterial_df表的字段matnr作为主键，与fct_mat_YSSXMTYD_df表的MATNR主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_yssmaterial_df",
+        "columns": [
+          "matnr"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YSSCGHTDetail_df",
+        "columns": [
+          "MAT_CODE_ID"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_yssmaterial_df表的字段matnr作为主键，与fct_mat_YSSCGHTDetail_df表的MAT_CODE_ID主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_yssmaterial_df",
+        "columns": [
+          "matnr"
+        ]
+      },
+      "right": {
+        "table": "FCT_MAT_YSSWZJZXXB_DF",
+        "columns": [
+          "MAT_CODE"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_yssmaterial_df表的字段matnr作为主键，与FCT_MAT_YSSWZJZXXB_DF表的MAT_CODE主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_yssmaterial_df",
+        "columns": [
+          "matnr"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YSSWZGYGCXXB_df",
+        "columns": [
+          "MAT_CODE"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_yssmaterial_df表的字段matnr作为主键，与fct_mat_YSSWZGYGCXXB_df表的MAT_CODE主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_yssmaterial_df",
+        "columns": [
+          "matnr"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YYSwzhtlvjs_df",
+        "columns": [
+          "mat_code_id"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_yssmaterial_df表的字段matnr作为主键，与fct_mat_YYSwzhtlvjs_df表的mat_code_id主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_yssmaterial_df",
+        "columns": [
+          "matnr"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YSSFJSFP_DF",
+        "columns": [
+          "LOCALMATERIALID"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_yssmaterial_df表的字段matnr作为主键，与fct_mat_YSSFJSFP_DF表的LOCALMATERIALID主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_ysssupply_df",
+        "columns": [
+          "LIFNR"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YSSXMTYD_df",
+        "columns": [
+          "ZLIFNR"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_ysssupply_df表的字段LIFNR作为主键，与fct_mat_YSSXMTYD_df表的ZLIFNR主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_ysssupply_df",
+        "columns": [
+          "LIFNR"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YSSWZGYGCXXB_df",
+        "columns": [
+          "SUPP_ID"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_ysssupply_df表的字段LIFNR作为主键，与fct_mat_YSSWZGYGCXXB_df表的SUPP_ID主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_ysssupply_df",
+        "columns": [
+          "LIFNR"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YYSwzhtlvjs_df",
+        "columns": [
+          "SUPP_ID"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_ysssupply_df表的字段LIFNR作为主键，与fct_mat_YYSwzhtlvjs_df表的SUPP_ID主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_ysssupply_df",
+        "columns": [
+          "LIFNR"
+        ]
+      },
+      "right": {
+        "table": "FCT_MAT_YSSWZJZXXB_DF",
+        "columns": [
+          "ORG_CODE"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_ysssupply_df表的字段LIFNR作为主键，与FCT_MAT_YSSWZJZXXB_DF表的ORG_CODE主键存在关系"
+    },
+    {
+      "left": {
+        "table": "fct_mat_ysssupply_df",
+        "columns": [
+          "LIFNR"
+        ]
+      },
+      "right": {
+        "table": "fct_mat_YSSCGDD_df",
+        "columns": [
+          "lifnr"
+        ]
+      },
+      "type": "inner",
+      "confidence": 0.9,
+      "note": "fct_mat_ysssupply_df表的字段LIFNR作为主键，与fct_mat_YSSCGDD_df表的lifnr主键存在关系"
+    }
+  ]
+}

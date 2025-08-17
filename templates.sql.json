@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "templates": [
+    {
+      "id": "contract_name_by_order_no",
+      "intent": "lookup",
+      "description": "根据采购订单号查询合同名称",
+      "target": "DWD_MAT_CON_ITEM.CON_NAME",
+      "slots": {
+        "order_no": {
+          "pattern_ref": "order_no",
+          "required": true
+        }
+      },
+      "sql": "SELECT CON_NAME AS 合同名称 FROM DWD_MAT_CON_ITEM WHERE PUR_ODR_CODE = ${order_no}",
+      "limits": {
+        "max_rows": 200,
+        "max_joins": 0
+      }
+    },
+    {
+      "id": "prepaid_pct_by_contract_name",
+      "intent": "lookup",
+      "description": "某合同的预付比例（按合同名称过滤）",
+      "target": "UN01_03_ERP_CD_EKPO.DPPCT",
+      "slots": {
+        "contract_name": {
+          "pattern_ref": "contract_name",
+          "required": true
+        }
+      },
+      "sql": "SELECT item.PUR_ODR_CODE AS 采购订单号, item.CON_NAME AS 合同名称, erp.DPPCT AS 预付比例\nFROM DWD_MAT_CON_ITEM item\nINNER JOIN UN01_03_ERP_CD_EKPO erp ON item.PUR_ODR_CODE = erp.EBELN\nWHERE item.CON_NAME = ${contract_name}",
+      "limits": {
+        "max_rows": 200,
+        "max_joins": 1
+      }
+    },
+    {
+      "id": "prepaid_due_date_by_contract_name",
+      "intent": "lookup",
+      "description": "某合同的预付到期日（按合同名称过滤）",
+      "target": "UN01_03_ERP_CD_EKPO.DPDAT",
+      "slots": {
+        "contract_name": {
+          "pattern_ref": "contract_name",
+          "required": true
+        }
+      },
+      "sql": "SELECT item.PUR_ODR_CODE AS 采购订单号, item.CON_NAME AS 合同名称, erp.DPDAT AS 预付到期日\nFROM DWD_MAT_CON_ITEM item\nINNER JOIN UN01_03_ERP_CD_EKPO erp ON item.PUR_ODR_CODE = erp.EBELN\nWHERE item.CON_NAME = ${contract_name}",
+      "limits": {
+        "max_rows": 200,
+        "max_joins": 1
+      }
+    },
+    {
+      "id": "prepaid_amt_by_contract_name",
+      "intent": "lookup",
+      "description": "某合同的预付款金额（按合同名称过滤）",
+      "target": "UN01_03_ERP_CD_EKPO.DPAMT",
+      "slots": {
+        "contract_name": {
+          "pattern_ref": "contract_name",
+          "required": true
+        }
+      },
+      "sql": "SELECT item.PUR_ODR_CODE AS 采购订单号, item.CON_NAME AS 合同名称, erp.DPAMT AS 预付款金额\nFROM DWD_MAT_CON_ITEM item\nINNER JOIN UN01_03_ERP_CD_EKPO erp ON item.PUR_ODR_CODE = erp.EBELN\nWHERE item.CON_NAME = ${contract_name}",
+      "limits": {
+        "max_rows": 200,
+        "max_joins": 1
+      }
+    },
+    {
+      "id": "contract_name_by_project_name",
+      "intent": "hop_query",
+      "description": "根据工程名称找到对应合同名称",
+      "target": "DWD_MAT_CON_ITEM.CON_NAME",
+      "slots": {
+        "project_name": {
+          "pattern_ref": "project_name",
+          "required": true
+        }
+      },
+      "requires_cte": true,
+      "sql": "WITH req AS (\n  SELECT DISTINCT PROV_REQ_CODE\n  FROM DWD_MAT_PUR_REQ_ITEM_BIDPKG\n  WHERE SINGLE_ENG_NAME = ${project_name}\n),\npo AS (\n  SELECT DISTINCT e.EBELN\n  FROM UN01_03_ERP_CD_EKPO e\n  INNER JOIN req r ON e.BANFN = r.PROV_REQ_CODE\n)\nSELECT DISTINCT c.CON_NAME AS 合同名称\nFROM DWD_MAT_CON_ITEM c\nINNER JOIN po p ON c.PUR_ODR_CODE = p.EBELN"
+    },
+    {
+      "id": "catalog_rules_by_req_no",
+      "intent": "hop_query",
+      "description": "根据采购申请号获取大中小类及目录规则",
+      "target": "dim_cst_zcqsm_cgml_index.zcgfs",
+      "slots": {
+        "req_no": {
+          "pattern_ref": "req_no",
+          "required": true
+        }
+      },
+      "requires_cte": true,
+      "sql": "WITH req AS (\n  SELECT DISTINCT wlbm\n  FROM dws_ast_zcqsm_wzsj_cgsq_info_mf\n  WHERE cgsq = ${req_no}\n),\nmat AS (\n  SELECT m.mat_code, m.max_class_name, m.mid_class_name, m.min_class_name\n  FROM dws_ast_zcqsm_wlfwzsj_info_mf m\n  INNER JOIN req r ON m.mat_code = r.wlbm\n)\nSELECT DISTINCT\n  idx.zssfw  AS 实施范围,\n  idx.zcgfs  AS 建议采购方式,\n  idx.zcgzzfs AS 建议采购组织方式,\n  idx.zcgml  AS 国网省网目录,\n  idx.zyjfl  AS 一级分类（配置）, idx.zejfl AS 二级分类（配置）, idx.zdydj AS 电压等级（配置）, idx.zzyxf AS 专业细分（配置）\nFROM dim_cst_zcqsm_cgml_index idx\nINNER JOIN mat\n  ON idx.zwzdl = mat.max_class_name AND idx.zwzzl = mat.mid_class_name AND idx.zwzxl = mat.min_class_name"
+    },
+    {
+      "id": "nearest_batch_by_method",
+      "intent": "selection",
+      "description": "按建议采购方式在批次表中挑最近的计划编号（截止日期最近且未过期）",
+      "target": "ods_erp_p00_sapsr3_ztmmjy_tw_zbpc.zzbjhbh",
+      "slots": {
+        "method": {
+          "synonyms": [
+            "公开招标",
+            "竞争性谈判",
+            "单一来源",
+            "邀请招标"
+          ],
+          "required": true
+        }
+      },
+      "sql": "SELECT zzbjhbh AS 计划编号, zzbjhmc1 AS 计划名称, zzbjzrq AS 计划申报截止时间, zzbsbfs AS 招标方式, zzbnd AS 年份\nFROM ods_erp_p00_sapsr3_ztmmjy_tw_zbpc\nWHERE zzbsbfs = ${method} AND zzbjzrq >= CURRENT_DATE\nORDER BY zzbjzrq ASC\nFETCH FIRST 1 ROW ONLY",
+      "notes": [
+        "现库无“批次采购/非批次”字段，本模板只按招标方式+最近截止日筛选"
+      ]
+    }
+  ]
+}
