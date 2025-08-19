@@ -118,5 +118,40 @@
         "现库无“批次采购/非批次”字段，本模板只按招标方式+最近截止日筛选"
       ]
     }
+    {
+    "id": "accp_status_by_order_no",
+    "sql": "SELECT accp_status AS 验收单状态\nFROM fct_mat_YYSwzhtlvjs_df\nWHERE PURORD = ${order_no}"
+    }
+    {
+    "id": "accp_status_by_contract_name",
+    "sql": "SELECT accp_status AS 验收单状态\nFROM fct_mat_YYSwzhtlvjs_df\nWHERE CON_NAME = ${contract_name}"
+    }
+
+    {
+    "id": "hdov_status_by_order_no",
+    "sql": "SELECT hdov_status AS 交接单签署状态\nFROM fct_mat_YYSwzhtlvjs_df\nWHERE PURORD = ${order_no}"
+    }
+    {
+    "id": "hdov_time_by_order_no",
+    "sql": "SELECT hdov_time AS 实际交货日期\nFROM fct_mat_YYSwzhtlvjs_df\nWHERE PURORD = ${order_no}"
+    }
+    {
+    "id": "online_status_by_order_no",
+    "sql": "SELECT online_status AS 投运单签署状态\nFROM fct_mat_YYSwzhtlvjs_df\nWHERE PURORD = ${order_no}"
+    }
+
+    {
+    "id": "invoice_sum_total_by_order_no",
+    "sql": "SELECT SUM(TOTALAMOUNT) AS 发票价税合计金额\nFROM fct_mat_YSSFJSFP_DF\nWHERE PURCHASECODE = ${order_no}"
+    }
+    {
+    "id": "invoice_sum_total_by_contract_name",
+    "sql": "SELECT SUM(TOTALAMOUNT) AS 发票价税合计金额\nFROM fct_mat_YSSFJSFP_DF\nWHERE PURCHASECODE IN (\n  SELECT PURORD FROM fct_mat_YYSwzhtlvjs_df WHERE CON_NAME = ${contract_name}\n)"
+    }
+    {
+    "id": "invoice_sum_nettax_by_order_no",
+    "sql": "SELECT SUM(NOTTAXAMOUNTS) AS 发票不含税金额\nFROM fct_mat_YSSFJSFP_DF\nWHERE PURCHASECODE = ${order_no}"
+    }
   ]
+
 }
