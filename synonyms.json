@@ -150,5 +150,16 @@
       "map_to": "ods_erp_p00_sapsr3_ztmmjy_tw_zbpc.zzbjhbh",
       "alias": "计划编号"
     }
+    {"phrase": "验收单状态",   "map_to": "fct_mat_YYSwzhtlvjs_df.accp_status",  "alias": "验收单状态"}
+  {"phrase": "交接单签署状态", "map_to": "fct_mat_YYSwzhtlvjs_df.hdov_status",  "alias": "交接单签署状态"}
+  {"phrase": "实际交货日期",   "map_to": "fct_mat_YYSwzhtlvjs_df.hdov_time",    "alias": "实际交货日期"}
+  {"phrase": "投运单签署状态", "map_to": "fct_mat_YYSwzhtlvjs_df.online_status","alias": "投运单签署状态"}
+
+  {"phrase": "发票价税合计",   "map_to": "fct_mat_YSSFJSFP_DF.TOTALAMOUNT",     "alias": "发票价税合计金额"}
+  {"phrase": "发票不含税金额", "map_to": "fct_mat_YSSFJSFP_DF.NOTTAXAMOUNTS",   "alias": "发票不含税金额"}
+
+  {"phrase": "付款比例",       "map_to": "fct_mat_YYSwzhtlvjs_df.PAY_RATE",     "alias": "付款比例"}
+  {"phrase": "合同金额",       "map_to": "fct_mat_YYSwzhtlvjs_df.TAX_AMT",      "alias": "合同金额"}
   ]
+
 }
